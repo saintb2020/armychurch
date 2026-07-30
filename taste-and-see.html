@@ -163,14 +163,18 @@ const UI = {
      ready:'READY WHEN YOU ARE — 決断のタイミングは、君が決めていい。扉はいつでも開いている。',
      survey:'アンケート',surveyB:'開始前アンケートに答える',surveyA:'完了後アンケートに答える',
      surveyNote:'チャレンジを始める前に「開始前」、31日終えたら「完了後」に答えてね。',
-     done:'今日の分を終えた',doneOn:'✓ 完了！よくやった',finalwk:'FINAL',qlabel:'💭 最後の問い'},
+     done:'今日の分を終えた',doneOn:'✓ 完了！よくやった',finalwk:'FINAL',qlabel:'💭 最後の問い',
+     openq:'💬 オープンクエスチョン',decq:'❓ 決断の問い',scrip:'📖 聖書をひらく',toGate:'ゲートへ進む',toDay1:'DAY 1 を始める',
+     studyCard:'スタディから始める人へ',studyCardNote:'週1のグループで、ガイドと一緒に進む入口。3つのドアと1つのゲート。',studyOpen:'スタディをひらく',backStudy:'スタディ目次'},
  en:{home:'Contents',prev:'← Previous',next:'Next →',q:'💭 Questions to taste',pr:'🙏 Today\'s prayer',j:'✍️ Today\'s one line',jj:'✍️ Today\'s journal',th:'Today\'s theme',
      door:'For anyone who wants to connect with Love (Jesus)',doorNote:'You don\'t have to wait until Day 31. If today is your day, today is fine.',doorBtn:'Open the door',
      start:'Start DAY 1',how:'How the challenge works',howItems:['Read the Bible and journal: 5 minutes a day','Pray one line — “If You\'re real, show me in a way I can understand”: 30 seconds a day','Gather with the church: 2 hours a week'],
      ready:'READY WHEN YOU ARE — You decide the timing. The door is always open.',
      survey:'Surveys',surveyB:'Take the before survey',surveyA:'Take the after survey',
      surveyNote:'Take the “before” survey when you start, and the “after” survey once you finish Day 31.',
-     done:'Mark today as done',doneOn:'✓ Done! Well done',finalwk:'FINAL',qlabel:'💭 The final questions'}
+     done:'Mark today as done',doneOn:'✓ Done! Well done',finalwk:'FINAL',qlabel:'💭 The final questions',
+     openq:'💬 Open questions',decq:'❓ The decision question',scrip:'📖 Open the Bible',toGate:'Go to the gate',toDay1:'Start DAY 1',
+     studyCard:'Starting from the study?',studyCardNote:'The entrance walked with a guide in the weekly group. Three doors and one gate.',studyOpen:'Open the study',backStudy:'Study contents'}
 };
 
 let lang='ja';
@@ -219,6 +223,7 @@ function renderHome(){
   </div>`;
   h+=`<div class="card"><h3>${esc(u.how)}</h3><ul>${u.howItems.map(x=>'<li>'+esc(x)+'</li>').join('')}</ul>
       <p style="font-size:.82rem;color:var(--muted);margin-top:.9rem">${esc(u.ready)}</p></div>`;
+  h+=`<div class="card"><h3>${esc(u.studyCard)}</h3><p style="font-size:.85rem;color:var(--muted)">${esc(u.studyCardNote)}</p><div class="btnrow"><a class="btn" href="#study">${esc(u.studyOpen)}</a></div></div>`;
   if(FORM_BEFORE||FORM_AFTER){
     h+=`<div class="card"><h3>${esc(u.survey)}</h3><p style="font-size:.85rem;color:var(--muted)">${esc(u.surveyNote)}</p><div class="btnrow">`;
     if(FORM_BEFORE) h+=`<a class="btn" href="${FORM_BEFORE}" target="_blank" rel="noopener">${esc(u.surveyB)}</a>`;
@@ -255,6 +260,40 @@ function renderDay(n){
   h+=`</div></div>`;
   return h;
 }
+function refBlock(refs){
+  const u=UI[lang];
+  return `<div class="seclabel">${u.scrip}</div>`+refs.map(x=>`<div class="verse"><div class="ref">📖 ${esc(x.r)}</div><div class="vt">${fmt(x.t)}</div></div>`).join('');
+}
+function decBlock(dec,note,href,btn){
+  return `<div class="doorcard"><div class="t">${fmt(dec)}</div><p>${esc(note)}</p><a class="btn primary" href="${href}">${esc(btn)}</a></div>`;
+}
+function renderStudy(){
+  const c=C(), u=UI[lang], s=c.study;
+  let h=`<div class="daypg"><div class="dayno">STUDY</div><h1 class="daytitle">${fmt(s.title)}</h1><div class="body">${paras(s.lead)}</div><ul class="daylist" style="margin-top:1.5rem">`;
+  s.doors.forEach((d,i)=>{ h+=`<li><a href="#s${i+1}"><span class="dn">${d.no}</span><span>${fmt(d.title)}</span></a></li>`; });
+  h+=`<li><a href="#gate"><span class="dn">GATE</span><span>${fmt(s.gate.title.split('｜')[1]||s.gate.title)}</span></a></li>`;
+  h+=`</ul><div class="pagenav" style="margin-top:2.4rem"><a class="home" href="#">${u.home}</a></div></div>`;
+  return h;
+}
+function renderDoor(i){
+  const c=C(), u=UI[lang], d=c.study.doors[i-1];
+  let h=`<div class="daypg"><div class="dayno">${d.no}</div><h1 class="daytitle">${fmt(d.title)}</h1>`;
+  h+=`<div class="seclabel">${u.openq}</div><ul class="qlist">${d.q.map(x=>'<li>'+fmt(x)+'</li>').join('')}</ul>`;
+  h+=refBlock(d.refs);
+  h+=`<div class="seclabel">${u.decq}</div>`+decBlock(d.dec,d.decNote,'#gate',u.toGate);
+  h+=`<div class="pagenav"><a href="#study">← ${u.backStudy}</a><a class="home" href="#">${u.home}</a>${i<3?`<a href="#s${i+1}">${u.next}</a>`:`<a href="#gate">${u.next}</a>`}</div></div>`;
+  return h;
+}
+function renderGate(){
+  const c=C(), u=UI[lang], g=c.study.gate;
+  let h=`<div class="daypg"><div class="dayno">GATE</div><h1 class="daytitle">${fmt(g.title)}</h1><div class="body">${paras(g.intro)}</div>`;
+  for(const p of g.parts){
+    h+=`<h2 style="font-family:var(--serif-ja);font-size:1.2rem;margin:2.8rem 0 .9rem;font-weight:600">${fmt(p.h)}</h2><div class="body">${paras(p.p)}</div>`+refBlock(p.refs);
+  }
+  h+=`<div class="seclabel">${u.decq}</div>`+decBlock(g.dec,g.decNote,'#d1',u.toDay1);
+  h+=`<div class="pagenav"><a href="#study">← ${u.backStudy}</a><a class="home" href="#">${u.home}</a><a href="#d1">${u.next}</a></div></div>`;
+  return h;
+}
 function renderConnect(){
   const c=C();
   return `<div class="daypg cn"><div class="dayno">CONNECT WITH LOVE</div><h1>${fmt(c.connect.title)}</h1>${renderSections(c.connect.sec)}</div>`;
@@ -280,6 +319,15 @@ function route(){
   }else if(hash==='#connect'){
     app.innerHTML=renderConnect();
     document.getElementById('doorfix').hidden=true;
+  }else if(hash==='#study'){
+    app.innerHTML=renderStudy();
+    document.getElementById('doorfix').hidden=false;
+  }else if((m=hash.match(/^#s([1-3])$/))){
+    app.innerHTML=renderDoor(+m[1]);
+    document.getElementById('doorfix').hidden=false;
+  }else if(hash==='#gate'){
+    app.innerHTML=renderGate();
+    document.getElementById('doorfix').hidden=false;
   }else{
     app.innerHTML=renderHome();
     document.getElementById('doorfix').hidden=true;
