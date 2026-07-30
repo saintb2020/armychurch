@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TASTE &amp; SEE｜神様を味わう31日</title>
+<meta name="description" content="神様を味わう31日チャレンジ。毎日5分の聖書と日記、30秒の祈り。全部信じてなくていい。まず味わってみよう。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFDF9;
+  --ink:#26211C;
+  --muted:#8B8177;
+  --line:#EAE3D8;
+  --love:#B42B2B;
+  --love-soft:#FBF1EE;
+  --serif-ja:'Shippori Mincho',serif;
+  --sans-ja:'Zen Kaku Gothic New',system-ui,sans-serif;
+  --serif-en:'Cormorant Garamond',Georgia,serif;
+  --sans-en:system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans-ja);line-height:2;font-size:16px;-webkit-font-smoothing:antialiased}
+body.en{font-family:var(--sans-en);line-height:1.75}
+a{color:var(--love);text-decoration:none}
+strong{font-weight:700}
+.wrap{max-width:39rem;margin:0 auto;padding:0 1.35rem 7.5rem}
+/* header */
+header{position:sticky;top:0;background:rgba(255,253,249,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:20}
+.hbar{max-width:39rem;margin:0 auto;padding:.7rem 1.35rem;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:var(--serif-en);font-weight:600;letter-spacing:.14em;font-size:.95rem;color:var(--ink)}
+.brand em{font-style:normal;color:var(--love)}
+.hnav{display:flex;gap:.6rem;align-items:center}
+.hlink{font-size:.8rem;color:var(--muted);padding:.25rem .4rem}
+.langtg{display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;font-size:.75rem}
+.langtg button{border:0;background:none;padding:.28rem .7rem;cursor:pointer;color:var(--muted);font-family:inherit}
+.langtg button.on{background:var(--ink);color:#fff}
+/* home hero */
+.hero{padding:4.2rem 0 2.6rem;text-align:center}
+.hero .eyebrow{font-family:var(--serif-en);letter-spacing:.32em;font-size:.8rem;color:var(--love)}
+.hero h1{font-family:var(--serif-ja);font-size:2rem;line-height:1.6;margin:.9rem 0 .4rem;font-weight:600}
+body.en .hero h1{font-family:var(--serif-en);font-size:2.5rem;line-height:1.2}
+.hero .verse{font-family:var(--serif-ja);color:var(--muted);font-size:.95rem;margin-top:1.1rem}
+body.en .hero .verse{font-family:var(--serif-en);font-size:1.05rem;font-style:italic}
+.hero .lead{margin-top:1.6rem;text-align:left;white-space:normal}
+/* cards */
+.card{border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.4rem;margin:1.3rem 0;background:#fff}
+.card h3{font-family:var(--serif-ja);font-size:1.05rem;margin-bottom:.7rem}
+body.en .card h3{font-family:var(--serif-en);font-size:1.25rem}
+.card ul{list-style:none}
+.card li{padding-left:1.35em;position:relative;margin:.35rem 0}
+.card li::before{content:'✓';position:absolute;left:0;color:var(--love);font-weight:700}
+.btnrow{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.9rem}
+.btn{display:inline-block;border:1.5px solid var(--ink);border-radius:99px;padding:.45rem 1.2rem;font-size:.85rem;color:var(--ink);font-weight:500}
+.btn.primary{background:var(--love);border-color:var(--love);color:#fff}
+/* TOC */
+.toc{margin-top:2.6rem}
+.wkblock{margin:2.2rem 0}
+.wkhead{display:flex;align-items:baseline;gap:.8rem;border-bottom:1px solid var(--line);padding-bottom:.5rem;margin-bottom:.4rem}
+.wkhead .wkno{font-family:var(--serif-en);letter-spacing:.18em;font-size:.78rem;color:var(--love)}
+.wkhead h2{font-family:var(--serif-ja);font-size:1.15rem;font-weight:600}
+body.en .wkhead h2{font-family:var(--serif-en);font-size:1.35rem}
+.wkintro{font-size:.85rem;color:var(--muted);line-height:1.9;margin:.5rem 0 .8rem}
+.daylist{list-style:none}
+.daylist a{display:flex;align-items:center;gap:.85rem;padding:.62rem .3rem;border-bottom:1px dashed var(--line);color:var(--ink)}
+.daylist .dn{font-family:var(--serif-en);font-size:.75rem;letter-spacing:.1em;color:var(--muted);min-width:3.4em}
+.daylist .dot{margin-left:auto;width:.6rem;height:.6rem;border-radius:50%;border:1.5px solid var(--line)}
+.daylist .dot.done{background:var(--love);border-color:var(--love)}
+/* day page */
+.daypg{padding-top:3rem}
+.wkbanner{border:1px solid var(--line);background:#fff;border-radius:14px;padding:1.3rem 1.4rem;margin-bottom:2.4rem}
+.wkbanner .wkno{font-family:var(--serif-en);letter-spacing:.2em;font-size:.75rem;color:var(--love)}
+.wkbanner h2{font-family:var(--serif-ja);font-size:1.25rem;margin:.3rem 0 .6rem;font-weight:600}
+body.en .wkbanner h2{font-family:var(--serif-en);font-size:1.45rem}
+.wkbanner .wi{font-size:.9rem;line-height:2}
+body.en .wkbanner .wi{line-height:1.75}
+.dayno{font-family:var(--serif-en);letter-spacing:.3em;font-size:.85rem;color:var(--love)}
+h1.daytitle{font-family:var(--serif-ja);font-size:1.65rem;line-height:1.6;margin:.5rem 0 1.8rem;font-weight:600}
+body.en h1.daytitle{font-family:var(--serif-en);font-size:2.1rem;line-height:1.25}
+.theme{font-size:.85rem;color:var(--muted);margin:-1rem 0 1.8rem}
+.theme strong{color:var(--ink)}
+.verse{border-left:3px solid var(--love);padding:.4rem 0 .4rem 1.15rem;margin:1.9rem 0}
+.verse .ref{font-size:.78rem;letter-spacing:.05em;color:var(--muted);margin-bottom:.3rem}
+.verse .vt{font-family:var(--serif-ja);font-size:1.08rem;line-height:2}
+body.en .verse .vt{font-family:var(--serif-en);font-size:1.2rem;line-height:1.6;font-style:italic}
+.body p{margin:1.15rem 0}
+.seclabel{display:flex;align-items:center;gap:.55rem;margin:2.4rem 0 .9rem;font-weight:700;font-size:.95rem}
+.seclabel::after{content:'';flex:1;height:1px;background:var(--line)}
+.qlist{list-style:none}
+.qlist li{padding-left:1.5em;position:relative;margin:.7rem 0}
+.qlist li::before{content:'—';position:absolute;left:0;color:var(--love)}
+.prayer{background:var(--love-soft);border-radius:14px;padding:1.2rem 1.3rem;font-family:var(--serif-ja);line-height:2.1}
+body.en .prayer{font-family:var(--serif-en);font-size:1.1rem;line-height:1.7}
+.prnote{font-size:.88rem;color:var(--muted);margin-top:.8rem}
+.journal{border:1px dashed var(--love);border-radius:14px;padding:1.15rem 1.3rem}
+.journal .jl{margin:.6rem 0;font-weight:500}
+.journal .jl .lab{display:block;font-size:.82rem;color:var(--muted);font-weight:400}
+.donebtn{display:block;width:100%;margin:2.6rem 0 0;border:1.5px solid var(--line);background:#fff;border-radius:99px;padding:.7rem;font-size:.9rem;cursor:pointer;font-family:inherit;color:var(--muted)}
+.donebtn.on{border-color:var(--love);color:var(--love);font-weight:700}
+.pagenav{display:flex;justify-content:space-between;gap:1rem;margin-top:2.2rem;padding-top:1.4rem;border-top:1px solid var(--line);font-size:.88rem}
+.pagenav a{color:var(--ink)}
+.pagenav .home{color:var(--muted)}
+/* door */
+.doorfix{position:fixed;bottom:1.1rem;left:50%;transform:translateX(-50%);z-index:30;width:max-content;max-width:92vw}
+.doorfix a{display:flex;align-items:center;gap:.5rem;background:var(--ink);color:#fff;border-radius:99px;padding:.6rem 1.25rem;font-size:.82rem;box-shadow:0 6px 22px rgba(38,33,28,.22);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.doorfix .hb{color:#FF7A6E}
+.doorcard{border:1.5px solid var(--love);background:var(--love-soft);border-radius:16px;padding:1.4rem 1.5rem;margin:2.6rem 0;text-align:center}
+.doorcard .t{font-family:var(--serif-ja);font-weight:600;font-size:1.05rem}
+body.en .doorcard .t{font-family:var(--serif-en);font-size:1.25rem}
+.doorcard p{font-size:.88rem;color:var(--muted);margin:.5rem 0 .9rem}
+/* connect page */
+.cn h1{font-family:var(--serif-ja);font-size:1.7rem;line-height:1.6;margin:.5rem 0 2rem;font-weight:600}
+body.en .cn h1{font-family:var(--serif-en);font-size:2.15rem;line-height:1.25}
+.cn h2{font-family:var(--serif-ja);font-size:1.25rem;margin:3rem 0 1rem;padding-top:2rem;border-top:1px solid var(--line);font-weight:600}
+body.en .cn h2{font-family:var(--serif-en);font-size:1.5rem}
+.cn h3{font-family:var(--serif-ja);font-size:1.05rem;margin:2rem 0 .8rem;font-weight:600}
+body.en .cn h3{font-family:var(--serif-en);font-size:1.3rem}
+.bigq{font-family:var(--serif-ja);font-size:1.3rem;line-height:1.9;text-align:center;margin:2.4rem 0;font-weight:600}
+body.en .bigq{font-family:var(--serif-en);font-size:1.6rem;line-height:1.4}
+.footer{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);text-align:center;font-size:.78rem;color:var(--muted)}
+.formula{font-family:var(--serif-en);text-align:center;letter-spacing:.12em;font-size:.95rem;margin:2rem 0;color:var(--ink)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media(max-width:420px){.hero h1{font-size:1.7rem}h1.daytitle{font-size:1.45rem}}
+</style>
+</head>
+<body>
+<header>
+  <div class="hbar">
+    <a href="#" class="brand" id="brandlink">TASTE <em>&amp;</em> SEE</a>
+    <nav class="hnav">
+      <a href="#connect" class="hlink" id="cnlink">CONNECT</a>
+      <div class="langtg">
+        <button id="btnja" class="on">日本語</button><button id="btnen">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="app"></main>
+<div class="doorfix" id="doorfix" hidden>
+  <a href="#connect"><span class="hb">❤</span><span id="doortext"></span></a>
+</div>
+
+<!-- ============================================================
+  ▼▼ アンケートURL設定（ここだけ編集）▼▼
+  Googleフォームを2本作成し、URLを貼り付けてください。
+  空のままだとボタンは表示されません。
+============================================================ -->
+<script>
+const FORM_BEFORE = "";  // 開始前アンケートのGoogleフォームURL
+const FORM_AFTER  = "";  // 完了後アンケートのGoogleフォームURL
+</script>
+
+<script src="content-ja.js"></script>
+<script src="content-en.js"></script>
+<script>
+const UI = {
+ ja:{home:'目次',prev:'← 前の日',next:'次の日 →',q:'💭 味わう問い',pr:'🙏 今日の一言',j:'✍️ 今日の一行',jj:'✍️ 今日の日記',th:'今日のテーマ',
+     door:'愛（ジーサス）と繋がりたい人へ',doorNote:'31日目まで待つ必要はない。その日が、今日なら今日でいい。',doorBtn:'扉をひらく',
+     start:'DAY 1 を始める',how:'チャレンジのやり方',howItems:['聖書を読んで日記をつける：毎日5分','「私に分かるように存在を見せて」と一言祈る：毎日30秒','教会に集う：毎週2時間'],
+     ready:'READY WHEN YOU ARE — 決断のタイミングは、君が決めていい。扉はいつでも開いている。',
+     survey:'アンケート',surveyB:'開始前アンケートに答える',surveyA:'完了後アンケートに答える',
+     surveyNote:'チャレンジを始める前に「開始前」、31日終えたら「完了後」に答えてね。',
+     done:'今日の分を終えた',doneOn:'✓ 完了！よくやった',finalwk:'FINAL',qlabel:'💭 最後の問い'},
+ en:{home:'Contents',prev:'← Previous',next:'Next →',q:'💭 Questions to taste',pr:'🙏 Today\'s prayer',j:'✍️ Today\'s one line',jj:'✍️ Today\'s journal',th:'Today\'s theme',
+     door:'For anyone who wants to connect with Love (Jesus)',doorNote:'You don\'t have to wait until Day 31. If today is your day, today is fine.',doorBtn:'Open the door',
+     start:'Start DAY 1',how:'How the challenge works',howItems:['Read the Bible and journal: 5 minutes a day','Pray one line — “If You\'re real, show me in a way I can understand”: 30 seconds a day','Gather with the church: 2 hours a week'],
+     ready:'READY WHEN YOU ARE — You decide the timing. The door is always open.',
+     survey:'Surveys',surveyB:'Take the before survey',surveyA:'Take the after survey',
+     surveyNote:'Take the “before” survey when you start, and the “after” survey once you finish Day 31.',
+     done:'Mark today as done',doneOn:'✓ Done! Well done',finalwk:'FINAL',qlabel:'💭 The final questions'}
+};
+
+let lang='ja';
+try{ lang = localStorage.getItem('ts_lang') || 'ja'; }catch(e){}
+let doneSet = new Set();
+try{ doneSet = new Set(JSON.parse(localStorage.getItem('ts_done')||'[]')); }catch(e){}
+function saveDone(){ try{ localStorage.setItem('ts_done', JSON.stringify([...doneSet])); }catch(e){} }
+
+const C = ()=> lang==='ja' ? CONTENT_JA : CONTENT_EN;
+const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+function fmt(s){
+  return esc(s).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+}
+function paras(s){
+  return s.split('\n\n').map(p=>'<p>'+fmt(p).replace(/\n/g,'<br>')+'</p>').join('');
+}
+function doorCard(){
+  const u=UI[lang];
+  return `<div class="doorcard"><div class="t">❤️ ${esc(u.door)}</div><p>${esc(u.doorNote)}</p><a class="btn primary" href="#connect">${esc(u.doorBtn)}</a></div>`;
+}
+function renderSections(secs){
+  const u=UI[lang];
+  let h='';
+  for(const s of secs){
+    if(s.th!==undefined) h+=`<div class="theme">${u.th}｜<strong>${fmt(s.th)}</strong></div>`;
+    else if(s.p!==undefined) h+=`<div class="body">${paras(s.p)}</div>`;
+    else if(s.v!==undefined) h+=`<div class="verse"><div class="ref">📖 ${esc(s.ref)}</div><div class="vt">${fmt(s.v).replace(/\n/g,'<br>')}</div></div>`;
+    else if(s.q!==undefined) h+=`<div class="seclabel">${s.label||u.q}</div><ul class="qlist">${s.q.map(x=>'<li>'+fmt(x)+'</li>').join('')}</ul>`;
+    else if(s.pr!==undefined){ h+=`<div class="seclabel">${u.pr}</div><div class="prayer">${fmt(s.pr).replace(/\n/g,'<br>')}</div>`; if(s.note) h+=`<div class="prnote">${fmt(s.note).replace(/\n/g,'<br>')}</div>`; }
+    else if(s.j!==undefined){ const multi=s.j.length>1; h+=`<div class="seclabel">${multi?u.jj:u.j}</div><div class="journal">${s.j.map(it=> typeof it==='string' ? `<div class="jl">${fmt(it)}</div>` : `<div class="jl"><span class="lab">${fmt(it.label)}</span>${fmt(it.x)}</div>`).join('')}</div>`; }
+    else if(s.h!==undefined) h+=`<h2 class="cnh" style="font-family:var(--serif-ja);font-size:1.2rem;margin:2.6rem 0 .9rem;font-weight:600">${fmt(s.h)}</h2>`;
+    else if(s.door!==undefined) h+=doorCard();
+    else if(s.formula!==undefined) h+=`<div class="formula">${esc(s.formula)}</div>`;
+  }
+  return h;
+}
+function weekOf(n){ return C().weeks.find(w=> n>=w.from && n<=w.to); }
+
+function renderHome(){
+  const c=C(), u=UI[lang];
+  let h=`<div class="hero">
+    <div class="eyebrow">TASTE &amp; SEE</div>
+    <h1>${esc(c.title)}</h1>
+    <div class="verse">${fmt(c.heroVerse)}</div>
+    <div class="lead body">${paras(c.intro)}</div>
+  </div>`;
+  h+=`<div class="card"><h3>${esc(u.how)}</h3><ul>${u.howItems.map(x=>'<li>'+esc(x)+'</li>').join('')}</ul>
+      <p style="font-size:.82rem;color:var(--muted);margin-top:.9rem">${esc(u.ready)}</p></div>`;
+  if(FORM_BEFORE||FORM_AFTER){
+    h+=`<div class="card"><h3>${esc(u.survey)}</h3><p style="font-size:.85rem;color:var(--muted)">${esc(u.surveyNote)}</p><div class="btnrow">`;
+    if(FORM_BEFORE) h+=`<a class="btn" href="${FORM_BEFORE}" target="_blank" rel="noopener">${esc(u.surveyB)}</a>`;
+    if(FORM_AFTER) h+=`<a class="btn" href="${FORM_AFTER}" target="_blank" rel="noopener">${esc(u.surveyA)}</a>`;
+    h+=`</div></div>`;
+  }
+  h+=`<div style="text-align:center;margin:2.2rem 0"><a class="btn primary" href="#d1">${esc(u.start)}</a></div>`;
+  h+=`<div class="toc">`;
+  for(const w of c.weeks){
+    h+=`<div class="wkblock"><div class="wkhead"><span class="wkno">${w.no}</span><h2>${fmt(w.title)}</h2></div>
+        <div class="wkintro">${fmt(w.short)}</div><ul class="daylist">`;
+    for(let n=w.from;n<=w.to;n++){
+      const d=c.days[n-1];
+      h+=`<li><a href="#d${n}"><span class="dn">DAY ${n}</span><span>${fmt(d.title)}</span><span class="dot ${doneSet.has(n)?'done':''}"></span></a></li>`;
+    }
+    h+=`</ul></div>`;
+  }
+  h+=`</div>`+doorCard();
+  return h;
+}
+function renderDay(n){
+  const c=C(), u=UI[lang], d=c.days[n-1], w=weekOf(n);
+  let h=`<div class="daypg">`;
+  if(n===w.from){
+    h+=`<div class="wkbanner"><div class="wkno">${w.no}</div><h2>${fmt(w.title)}</h2><div class="wi">${paras(w.intro)}</div></div>`;
+  }
+  h+=`<div class="dayno">DAY ${n}</div><h1 class="daytitle">${fmt(d.title)}</h1>`;
+  h+=renderSections(d.sec);
+  h+=`<button class="donebtn ${doneSet.has(n)?'on':''}" id="donebtn">${doneSet.has(n)?u.doneOn:u.done}</button>`;
+  h+=`<div class="pagenav">`;
+  h+= n>1 ? `<a href="#d${n-1}">${u.prev}</a>` : `<span></span>`;
+  h+=`<a class="home" href="#">${u.home}</a>`;
+  h+= n<31 ? `<a href="#d${n+1}">${u.next}</a>` : `<span></span>`;
+  h+=`</div></div>`;
+  return h;
+}
+function renderConnect(){
+  const c=C();
+  return `<div class="daypg cn"><div class="dayno">CONNECT WITH LOVE</div><h1>${fmt(c.connect.title)}</h1>${renderSections(c.connect.sec)}</div>`;
+}
+function route(){
+  const app=document.getElementById('app');
+  const hash=location.hash;
+  let m;
+  document.body.className = lang==='en'?'en':'';
+  document.documentElement.lang = lang;
+  document.getElementById('doortext').textContent = UI[lang].door;
+  if((m=hash.match(/^#d(\d+)$/)) && +m[1]>=1 && +m[1]<=31){
+    const n=+m[1];
+    app.innerHTML=renderDay(n);
+    document.getElementById('doorfix').hidden=false;
+    const b=document.getElementById('donebtn');
+    b.addEventListener('click',()=>{
+      if(doneSet.has(n)) doneSet.delete(n); else doneSet.add(n);
+      saveDone();
+      b.classList.toggle('on',doneSet.has(n));
+      b.textContent = doneSet.has(n)?UI[lang].doneOn:UI[lang].done;
+    });
+  }else if(hash==='#connect'){
+    app.innerHTML=renderConnect();
+    document.getElementById('doorfix').hidden=true;
+  }else{
+    app.innerHTML=renderHome();
+    document.getElementById('doorfix').hidden=true;
+  }
+  window.scrollTo(0,0);
+  document.getElementById('btnja').classList.toggle('on',lang==='ja');
+  document.getElementById('btnen').classList.toggle('on',lang==='en');
+}
+function setLang(l){ lang=l; try{localStorage.setItem('ts_lang',l);}catch(e){} route(); }
+document.getElementById('btnja').addEventListener('click',()=>setLang('ja'));
+document.getElementById('btnen').addEventListener('click',()=>setLang('en'));
+window.addEventListener('hashchange',route);
+route();
+</script>
+</body>
+</html>
