@@ -131,7 +131,7 @@ body.en .bigq{font-family:var(--serif-en);font-size:1.6rem;line-height:1.4}
   <div class="hbar">
     <a href="#" class="brand" id="brandlink">TASTE <em>&amp;</em> SEE</a>
     <nav class="hnav">
-      <a href="#connect" class="hlink" id="cnlink">CONNECT</a>
+      <a href="#connect" class="hlink" id="cnlink">BELIEVE</a>
       <div class="langtg">
         <button id="btnja" class="on">日本語</button><button id="btnen">EN</button>
       </div>
@@ -149,12 +149,12 @@ body.en .bigq{font-family:var(--serif-en);font-size:1.6rem;line-height:1.4}
   空のままだとボタンは表示されません。
 ============================================================ -->
 <script>
-const FORM_BEFORE = "";  // 開始前アンケートのGoogleフォームURL
-const FORM_AFTER  = "";  // 完了後アンケートのGoogleフォームURL
+const FORM_BEFORE = "https://docs.google.com/forms/d/e/1FAIpQLSevPUT8MHcNZ-dp7YePsLatWrkqzKv7Wi2NPpnLwopLAdLe_w/viewform?usp=publish-editor";
+const FORM_AFTER  = "https://docs.google.com/forms/d/e/1FAIpQLSeVR8DQe7Nox9cqlwp2YIfVS3bxFdhzzRwAtL0vesFKsKGVPg/viewform?usp=publish-editor";
 </script>
 
-<script src="content-ja.js?v=4"></script>
-<script src="content-en.js?v=4"></script>
+<script src="content-ja.js?v=5"></script>
+<script src="content-en.js?v=5"></script>
 <script>
 const UI = {
  ja:{home:'目次',prev:'← 前の日',next:'次の日 →',q:'💭 味わう問い',pr:'🙏 今日の一言',j:'✍️ 今日の一行',jj:'✍️ 今日の日記',th:'今日のテーマ',
@@ -166,7 +166,9 @@ const UI = {
      done:'今日の分を終えた',doneOn:'✓ 完了！よくやった',finalwk:'FINAL',qlabel:'💭 最後の問い',
      openq:'💬 オープンクエスチョン',decq:'❓ 決断の問い',scrip:'📖 聖書をひらく',toGate:'「TASTE & SEE」のスタディへ',toDay1:'DAY 1 を始める',
      studyCard:'STEP 1｜スタディ',studyCardNote:'チャレンジの前に、まず話して考える入口。グループでも、一人でも。「LOVE｜愛」と「TASTE & SEE｜味わってみれば分かる」の2つ。',studyOpen:'スタディをひらく',backStudy:'スタディ目次',
-     howTitle:'STEP 2｜神様を味わう31日チャレンジ'},
+     howTitle:'STEP 2｜TASTE & SEE｜テイストアンドシー',howTitle_en:'STEP 2｜TASTE & SEE',
+     howItems:['聖書を読んで日記をつける：毎日5分','「私に分かるように存在を見せて」と一言祈る：毎日30秒','教会に集う：毎週2時間'],
+     ready:'READY WHEN YOU ARE — 決断のタイミングは、君が決めていい。扉はいつでも開いている。'},
  en:{home:'Contents',prev:'← Previous',next:'Next →',q:'💭 Questions to taste',pr:'🙏 Today\'s prayer',j:'✍️ Today\'s one line',jj:'✍️ Today\'s journal',th:'Today\'s theme',
      door:'For anyone who wants to connect with Love (Jesus)',doorNote:'You don\'t have to wait until Day 31. If today is your day, today is fine.',doorBtn:'Open the door',
      start:'Start DAY 1',how:'How the challenge works',howItems:['Read the Bible and journal: 5 minutes a day','Pray one line — “If You\'re real, show me in a way I can understand”: 30 seconds a day','Gather with the church: 2 hours a week'],
@@ -176,7 +178,9 @@ const UI = {
      done:'Mark today as done',doneOn:'✓ Done! Well done',finalwk:'FINAL',qlabel:'💭 The final questions',
      openq:'💬 Open questions',decq:'❓ The decision question',scrip:'📖 Open the Bible',toGate:'To the "TASTE & SEE" study',toDay1:'Start DAY 1',
      studyCard:'STEP 1｜The Study',studyCardNote:'The entrance before the challenge — talk it through and think it over. In a group, or on your own. Two studies: "LOVE" and "TASTE & SEE."',studyOpen:'Open the study',backStudy:'Study contents',
-     howTitle:'STEP 2｜The 31-day challenge'}
+     howTitle:'STEP 2｜TASTE & SEE',howTitle_en:'STEP 2｜TASTE & SEE',
+     howItems:['Read the Bible and journal: 5 minutes a day','Pray one line — "If You\'re real, show me in a way I can understand": 30 seconds a day','Gather with the church: 2 hours a week'],
+     ready:'READY WHEN YOU ARE — You decide the timing. The door is always open.'}
 };
 
 let lang='ja';
@@ -218,22 +222,26 @@ function weekOf(n){ return C().weeks.find(w=> n>=w.from && n<=w.to); }
 
 function renderHome(){
   const c=C(), u=UI[lang];
+  // plain header — no title/verse/intro (moved into STEP 2 card)
   let h=`<div class="hero">
-    <div class="eyebrow">TASTE &amp; SEE</div>
-    <h1>${esc(c.title)}</h1>
-    <div class="verse">${fmt(c.heroVerse)}</div>
-    <div class="lead body">${paras(c.intro)}</div>
+    <div class="eyebrow">ARMY CHURCH</div>
   </div>`;
+  // STEP 1
   h+=`<div class="card" style="border-color:var(--love)"><h3>${esc(u.studyCard)}</h3><p style="font-size:.85rem;color:var(--muted)">${esc(u.studyCardNote)}</p><div class="btnrow"><a class="btn primary" href="#study">${esc(u.studyOpen)}</a></div></div>`;
-  h+=`<div class="card"><h3>${esc(u.howTitle)}</h3><ul>${u.howItems.map(x=>'<li>'+esc(x)+'</li>').join('')}</ul>
-      <p style="font-size:.82rem;color:var(--muted);margin-top:.9rem">${esc(u.ready)}</p></div>`;
-  if(FORM_BEFORE||FORM_AFTER){
-    h+=`<div class="card"><h3>${esc(u.survey)}</h3><p style="font-size:.85rem;color:var(--muted)">${esc(u.surveyNote)}</p><div class="btnrow">`;
-    if(FORM_BEFORE) h+=`<a class="btn" href="${FORM_BEFORE}" target="_blank" rel="noopener">${esc(u.surveyB)}</a>`;
-    if(FORM_AFTER) h+=`<a class="btn" href="${FORM_AFTER}" target="_blank" rel="noopener">${esc(u.surveyA)}</a>`;
-    h+=`</div></div>`;
-  }
-  h+=`<div style="text-align:center;margin:2.2rem 0"><a class="btn primary" href="#d1">${esc(u.start)}</a></div>`;
+  // STEP 2 — contains hero content
+  h+=`<div class="card"><h3>${esc(u.howTitle)}</h3>
+    <div class="verse" style="margin:.9rem 0 1rem">${fmt(c.heroVerse)}</div>
+    <div class="body" style="font-size:.9rem;margin-bottom:1rem">${paras(c.intro)}</div>
+    <ul>${u.howItems.map(x=>'<li style="margin:.35rem 0;padding-left:1.35em;position:relative"><span style="position:absolute;left:0;color:var(--love);font-weight:700">✓</span>'+esc(x)+'</li>').join('')}</ul>
+    <p style="font-size:.82rem;color:var(--muted);margin-top:.9rem">${esc(u.ready)}</p>
+    <div style="text-align:center;margin:1.2rem 0 .2rem"><a class="btn primary" href="#d1">${esc(u.start)}</a></div>
+  </div>`;
+  // surveys — always shown now (URLs are set)
+  h+=`<div class="card"><h3>${esc(u.survey)}</h3><p style="font-size:.85rem;color:var(--muted)">${esc(u.surveyNote)}</p><div class="btnrow">`;
+  h+=`<a class="btn" href="${FORM_BEFORE}" target="_blank" rel="noopener">${esc(u.surveyB)}</a>`;
+  h+=`<a class="btn" href="${FORM_AFTER}" target="_blank" rel="noopener">${esc(u.surveyA)}</a>`;
+  h+=`</div></div>`;
+  // TOC
   h+=`<div class="toc">`;
   for(const w of c.weeks){
     h+=`<div class="wkblock"><div class="wkhead"><span class="wkno">${w.no}</span><h2>${fmt(w.title)}</h2></div>
