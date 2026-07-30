@@ -739,7 +739,7 @@ If you haven't decided yet,
 
 But if you're interested, you don't have to end here either.
 
-Tell your guide, exactly as it is:
+Tell your leader, exactly as it is:
 **"I haven't decided to believe yet. But I want to know more."**
 
 You can ask questions.
@@ -968,10 +968,10 @@ Amen."`},
 
 So from today, take these three steps.
 
-**① Tell your guide**
+**① Tell your leader**
 
 You don't have to start alone.
-Tell the guide of your group:
+Tell the leader of your group:
 **"Today, I decided to believe in Jesus and walk with him."**
 
 They'll walk with you as you grow closer to Jesus from here.
@@ -984,7 +984,7 @@ It's a way of expressing with your body what happened in your heart:
 **the old self dying, and new life beginning with Jesus.**
 
 Start with the next page to learn what water baptism is.
-And when you want to take that step, tell your guide:
+And when you want to take that step, tell your leader:
 
 **"I want to be baptized."**`},
 {btn:{x:'💧 For anyone who wants to be baptized',href:'#baptism'}},
@@ -1026,32 +1026,32 @@ The old has gone.
 ]}
 
 ,study:{
-title:'The Study｜Doors → Gate → Road',
-lead:`These pages are for the weekly study group,\nwalked through together with a guide.\n\n**Three doors** — enter through any of them. You don't need to do all three.\nWhen one of the doors makes you think, "I want to know this God,"\nyou pass through **the gate** and onto **the 31-day road.**`,
+title:'The Study',
+doorsHead:'LOVE',
+gatesHead:'TASTE & SEE',
 doors:[
-{no:'DOOR 1',title:'Without love, does the world mean anything?',
+{no:'LOVE 1',title:'Without love, does the world mean anything?',
 q:['If no one else existed in the world, would you keep doing what you\'re working so hard at now? Why?','When did you most feel "I\'m glad to be alive"? — Were there people in that moment?','If you had to name the single most important thing in relationships, what would it be?'],
 refs:[{t:'Without love, everything is meaningless',r:'1 Corinthians 13:1–3'},{t:'God is love',r:'1 John 4:7–8'},{t:'Love is patient, love is kind',r:'1 Corinthians 13:4–8'}],
-dec:'Do you want to get to know the God who is love?',decNote:'If YES — go to GATE 1.'},
-{no:'DOOR 2',title:'Why do people need love?',
+dec:'Do you want to get to know the God who is love?',decNote:'If YES — go to the "TASTE & SEE" study.'},
+{no:'LOVE 2',title:'Why do people need love?',
 q:['What kinds of love have you searched for so far? (family, friendship, romance…)','When do you most feel "I want to be loved"?','If we\'re searching for it, does that mean something is missing? What do you think?'],
 refs:[{t:'Eating the forbidden fruit brought death — the connection with Love (God) died',r:'Genesis 2:16–17 / 3:6–8'},{t:'Through one man, sin and death entered',r:'Romans 5:12'},{t:'Through the second Adam, the love that died comes back to life',r:'1 Corinthians 15:21–22, 45'},{t:'Through one act of obedience, many are made righteous',r:'Romans 5:18–19'}],
-dec:'That feeling that the real you has died — do you want it brought back to life?',decNote:'If YES — go to GATE 1.'},
-{no:'DOOR 3',title:'How can we be filled with love?',
+dec:'That feeling that the real you has died — do you want it brought back to life?',decNote:'If YES — go to the "TASTE & SEE" study.'},
+{no:'LOVE 3',title:'How can we be filled with love?',
 q:['Can you picture someone "overflowing with love"? Why do you think they can be that way?','When does your own love run dry?','Where do you think love comes from?'],
 refs:[{t:'A branch cut off from the vine cannot bear fruit',r:'John 15:4–5'},{t:'The fruit of the Spirit is love',r:'Galatians 5:22–23'},{t:'Nothing can separate us from the love of God',r:'Romans 8:38–39'},{t:'Salvation is grace, through faith',r:'Ephesians 2:8–9'}],
-dec:'To be filled with love always — do you want to be connected to God\'s love?',decNote:'If YES — go to GATE 1.'}
+dec:'To be filled with love always — do you want to be connected to God\'s love?',decNote:'If YES — go to the "TASTE & SEE" study.'}
 ],
-gatesIntro:`Everyone who walked through a door thinking "I want to know this God"\npasses through this gate.\n\nThere are three gates — one per session.`,
 gates:[
-{no:'GATE 1',title:'Can imperfect people taste a perfect God?',
+{no:'TASTE & SEE 1',title:'Can imperfect people taste a perfect God?',
 p:`We are imperfect.\n\nIf there were even one drop of poison in a glass of water, would you drink it?\nNo, you wouldn't.\n\nIn the same way, imperfect people cannot connect\nwith a perfect God as they are.\nThe Bible calls that "one drop" **sin.**\n\nTo make poisoned water drinkable, you need an antidote.\n\nSo the only perfect one — Jesus —\ncarried our sin in our place and went to the cross.\n\nBecause he paid instead of us,\nanyone who believes is washed clean\nand can be connected to God.\n\n**So the way is already open.**`,
 refs:[{t:'All have sinned',r:'Romans 3:23'},{t:"Through Jesus' sacrifice, we can be connected to God",r:'1 Peter 3:18'},{t:'Believe in your heart, declare with your mouth, and you will be saved',r:'Romans 10:9–10'}]},
-{no:'GATE 2',title:'Can I taste him without understanding everything?',
+{no:'TASTE & SEE 2',title:'Can I taste him without understanding everything?',
 p:`If a friend said, "I know someone you'd totally hit it off with — can I introduce you?"\nwhat would you do?\n\nYou wouldn't say, "Not until I understand everything about them."\n\nYou'd just meet them.\nWhether you click — **you find out by meeting.**\n\nIt's the same with God.\nNot "after I understand everything."\n\n**First, meet him.**\n\nIt's fine to start small.\nStaying in the dark is the real waste.`,
 refs:[{t:'Taste and see that the LORD is good',r:'Psalm 34:8'},{t:'Do not despise small beginnings',r:'Zechariah 4:10'},{t:'Not knowing darkens the heart',r:'Ephesians 4:18'},{t:'Even Peter started with "Go away from me"',r:'Luke 5:8, 10–11'}],
-dec:'Will you taste God?',decNote:'If YES — go to GATE 3.',decHref:'#g3',decBtn:'Go to GATE 3'},
-{no:'GATE 3',title:'So how do I taste him?',
+dec:'Will you taste God?',decNote:'If YES — on to "So how do I taste him?"',decHref:'#g3',decBtn:'Next study'},
+{no:'TASTE & SEE 3',title:'So how do I taste him?',
 p:`It's simple. **The one-month challenge.**\n\n**① Read the Bible and journal: 5 minutes a day**\n**② Pray one line — "If You're real, show me in a way I can understand": 30 seconds a day**\n**③ Gather with the church: 2 hours a week**\n\nIf you had some unknown invention and couldn't figure it out no matter how much you fiddled with it — what would you do?\nRead the manual, or ask the person who made it.\n\nThe Bible is our manual.\nGod is the one who made us.\nAnd church is where it all runs best.`,
 refs:[{t:'The truth will set you free',r:'John 8:31–32'},{t:'God hears our prayers',r:'1 John 5:14–15'},{t:'People flourish in the right environment',r:'Psalm 1:1–3'}],
 dec:'If one month could show you the best way to live — will you try it?',decNote:'If YES — go to DAY 1.',decHref:'#d1',decBtn:'Start DAY 1'}
@@ -1088,7 +1088,7 @@ sec:[
 {h:'READY WHEN YOU ARE'},
 {p:`Baptism is not something anyone forces on you.\nIt's not something you do by comparing yourself to others.\nIt's not tied to a day number in this course.\n\nBut if the faith in you says,\n**"I believe in Jesus, and I want to follow him,"**\nyou don't need to wait for years either.\n\nLike the people in the Bible,\n**the moment you're ready is the moment.**\n\nAsk yourself:\n\n**"Do I want to express — through water baptism — dying to my old self and living new with Jesus?"**`},
 {h:'If your answer is YES'},
-{p:`Tell your guide, simply:\n\n**"I want to be baptized."**\n\nThat's enough.\n\nTogether with your guide,\ngo over anything you're unsure about,\nand decide when and where it will happen.\n\nAnd on the day of your baptism,\nenter the water not to show anyone —\n**but as faith toward Jesus.**`},
+{p:`Tell your leader, simply:\n\n**"I want to be baptized."**\n\nThat's enough.\n\nTogether with your leader,\ngo over anything you're unsure about,\nand decide when and where it will happen.\n\nAnd on the day of your baptism,\nenter the water not to show anyone —\n**but as faith toward Jesus.**`},
 {h:'As you enter the water'},
 {p:`Remember this.\n\nThis is **a funeral for the old you.**\nAnd at the same time, **a celebration of the birth of the new you.**\n\nYou go under the water.\n**The old me died with Jesus.**\n\nYou rise out of the water.\n**I live new with Jesus.**\n\nAnd from here,\nconnected to the God who is love,\nwith Jesus living in you,\nyou walk as the new you — reborn as love.`},
 {h:'After baptism — what next?'},

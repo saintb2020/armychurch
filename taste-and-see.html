@@ -153,8 +153,8 @@ const FORM_BEFORE = "";  // 開始前アンケートのGoogleフォームURL
 const FORM_AFTER  = "";  // 完了後アンケートのGoogleフォームURL
 </script>
 
-<script src="content-ja.js?v=3"></script>
-<script src="content-en.js?v=3"></script>
+<script src="content-ja.js?v=4"></script>
+<script src="content-en.js?v=4"></script>
 <script>
 const UI = {
  ja:{home:'目次',prev:'← 前の日',next:'次の日 →',q:'💭 味わう問い',pr:'🙏 今日の一言',j:'✍️ 今日の一行',jj:'✍️ 今日の日記',th:'今日のテーマ',
@@ -164,8 +164,8 @@ const UI = {
      survey:'アンケート',surveyB:'開始前アンケートに答える',surveyA:'完了後アンケートに答える',
      surveyNote:'チャレンジを始める前に「開始前」、31日終えたら「完了後」に答えてね。',
      done:'今日の分を終えた',doneOn:'✓ 完了！よくやった',finalwk:'FINAL',qlabel:'💭 最後の問い',
-     openq:'💬 オープンクエスチョン',decq:'❓ 決断の問い',scrip:'📖 聖書をひらく',toGate:'ゲートへ進む',toDay1:'DAY 1 を始める',
-     studyCard:'STEP 1｜スタディ（ドア → ゲート）',studyCardNote:'「神様を味わう」と決断する前の入口。週1のグループでガイドと一緒に進む。3つのドアのどれかで心が動いたら、ゲートを通って31日の旅へ。',studyOpen:'スタディをひらく',backStudy:'スタディ目次',
+     openq:'💬 オープンクエスチョン',decq:'❓ 決断の問い',scrip:'📖 聖書をひらく',toGate:'「TASTE & SEE」のスタディへ',toDay1:'DAY 1 を始める',
+     studyCard:'STEP 1｜スタディ',studyCardNote:'チャレンジの前に、まず話して考える入口。グループでも、一人でも。「LOVE｜愛」と「TASTE & SEE｜味わってみれば分かる」の2つ。',studyOpen:'スタディをひらく',backStudy:'スタディ目次',
      howTitle:'STEP 2｜神様を味わう31日チャレンジ'},
  en:{home:'Contents',prev:'← Previous',next:'Next →',q:'💭 Questions to taste',pr:'🙏 Today\'s prayer',j:'✍️ Today\'s one line',jj:'✍️ Today\'s journal',th:'Today\'s theme',
      door:'For anyone who wants to connect with Love (Jesus)',doorNote:'You don\'t have to wait until Day 31. If today is your day, today is fine.',doorBtn:'Open the door',
@@ -174,8 +174,8 @@ const UI = {
      survey:'Surveys',surveyB:'Take the before survey',surveyA:'Take the after survey',
      surveyNote:'Take the “before” survey when you start, and the “after” survey once you finish Day 31.',
      done:'Mark today as done',doneOn:'✓ Done! Well done',finalwk:'FINAL',qlabel:'💭 The final questions',
-     openq:'💬 Open questions',decq:'❓ The decision question',scrip:'📖 Open the Bible',toGate:'Go to the gate',toDay1:'Start DAY 1',
-     studyCard:'STEP 1｜The Study (Doors → Gate)',studyCardNote:'The entrance before deciding to taste God. Walked with a guide in the weekly group. When one of the three doors moves you, pass through the gate and onto the 31-day journey.',studyOpen:'Open the study',backStudy:'Study contents',
+     openq:'💬 Open questions',decq:'❓ The decision question',scrip:'📖 Open the Bible',toGate:'To the "TASTE & SEE" study',toDay1:'Start DAY 1',
+     studyCard:'STEP 1｜The Study',studyCardNote:'The entrance before the challenge — talk it through and think it over. In a group, or on your own. Two studies: "LOVE" and "TASTE & SEE."',studyOpen:'Open the study',backStudy:'Study contents',
      howTitle:'STEP 2｜The 31-day challenge'}
 };
 
@@ -273,10 +273,12 @@ function decBlock(dec,note,href,btn){
 function renderStudy(){
   const c=C(), u=UI[lang], s=c.study;
   if(!s||!s.gates){ return `<div class="daypg"><p>ページのデータが古い可能性があります。ページを再読み込み（スーパーリロード）してください。<br>The page data may be outdated. Please hard-refresh this page.</p></div>`; }
-  let h=`<div class="daypg"><div class="dayno">STUDY</div><h1 class="daytitle">${fmt(s.title)}</h1><div class="body">${paras(s.lead)}</div><ul class="daylist" style="margin-top:1.5rem">`;
-  s.doors.forEach((d,i)=>{ h+=`<li><a href="#s${i+1}"><span class="dn">${d.no}</span><span>${fmt(d.title)}</span></a></li>`; });
-  s.gates.forEach((g,i)=>{ h+=`<li><a href="#g${i+1}"><span class="dn">${g.no}</span><span>${fmt(g.title)}</span></a></li>`; });
-  h+=`</ul><div class="pagenav" style="margin-top:2.4rem"><a class="home" href="#">${u.home}</a></div></div>`;
+  let h=`<div class="daypg"><div class="dayno">STUDY</div><h1 class="daytitle">${fmt(s.title)}</h1>`;
+  h+=`<div class="wkblock"><div class="wkhead"><h2>${fmt(s.doorsHead)}</h2></div><ul class="daylist">`;
+  s.doors.forEach((d,i)=>{ h+=`<li><a href="#s${i+1}"><span class="dn">${i+1}</span><span>${fmt(d.title)}</span></a></li>`; });
+  h+=`</ul></div><div class="wkblock"><div class="wkhead"><h2>${fmt(s.gatesHead)}</h2></div><ul class="daylist">`;
+  s.gates.forEach((g,i)=>{ h+=`<li><a href="#g${i+1}"><span class="dn">${i+1}</span><span>${fmt(g.title)}</span></a></li>`; });
+  h+=`</ul></div><div class="pagenav" style="margin-top:2.4rem"><a class="home" href="#">${u.home}</a></div></div>`;
   return h;
 }
 function renderDoor(i){
@@ -291,7 +293,6 @@ function renderDoor(i){
 function renderGate(i){
   const c=C(), u=UI[lang], g=c.study.gates[i-1];
   let h=`<div class="daypg"><div class="dayno">${g.no}</div><h1 class="daytitle">${fmt(g.title)}</h1>`;
-  if(i===1) h+=`<div class="body" style="color:var(--muted);font-size:.9rem">${paras(c.study.gatesIntro)}</div>`;
   h+=`<div class="body">${paras(g.p)}</div>`+refBlock(g.refs);
   if(g.dec){ h+=`<div class="seclabel">${u.decq}</div>`+decBlock(g.dec,g.decNote,g.decHref,g.decBtn); }
   h+=`<div class="pagenav"><a href="#study">← ${u.backStudy}</a><a class="home" href="#">${u.home}</a>${i<3?`<a href="#g${i+1}">${u.next}</a>`:`<a href="#d1">${u.next}</a>`}</div></div>`;
