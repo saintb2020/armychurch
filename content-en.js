@@ -80,6 +80,9 @@ And in the end, no one else chooses. You do.`}
 ],
 days:[
 {title:'You are loved',sec:[
+{survey:'before',
+ h:'Challenge 1｜Record where you are right now',
+ p:`In this 31-day challenge, you'll check how much you've changed\nbefore and after tasting God.\n\nFirst, record where you are right now.\nIn 31 days, you'll answer the same questions again and compare.\n\nThere are no right answers. No need to look good.\n**Just record your honest self, as you are today.**\n\n※When you submit the Google Form, a copy of your answers will be sent to your email address. Enter an email you can access — you'll want to look back on it in 31 days.`},
 {ref:'Jeremiah 31:3',v:'"I have loved you with an everlasting love."'},
 {p:`If God is really there,
 He knew you long before you ever knew Him.
@@ -793,7 +796,10 @@ and becoming one with others who live the same love.`},
 {p:`And the goal was never
 to become a Christian who only knows things.
 
-**It's to be connected to Jesus, be reborn into his love, and live as that love.**`}
+**It's to be connected to Jesus, be reborn into his love, and live as that love.**`},
+{survey:'after',
+ h:'Final Challenge｜Compare yourself to 31 days ago',
+ p:`Well done!\n\nDo you remember the you from 31 days ago?\n\nAnswer the same questions one more time,\nand see how much you've changed since before you started tasting God.\n\nNo right answers. Just record your honest self.\n\nYou can check your answers from 31 days ago in the email copy that was sent to you.`}
 ]}
 ],
 connect:{

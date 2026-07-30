@@ -60,19 +60,19 @@ body.en .card h3{font-family:var(--serif-en);font-size:1.25rem}
 .toc{margin-top:2.6rem}
 .wkblock{margin:2.2rem 0}
 .wkhead{display:flex;align-items:baseline;gap:.8rem;border-bottom:1px solid var(--line);padding-bottom:.5rem;margin-bottom:.4rem}
-.wkhead .wkno{font-family:var(--serif-en);letter-spacing:.18em;font-size:.78rem;color:var(--love)}
+.wkhead .wkno{font-family:var(--serif-en);letter-spacing:.18em;font-size:.95rem;color:var(--love)}
 .wkhead h2{font-family:var(--serif-ja);font-size:1.15rem;font-weight:600}
 body.en .wkhead h2{font-family:var(--serif-en);font-size:1.35rem}
 .wkintro{font-size:.85rem;color:var(--muted);line-height:1.9;margin:.5rem 0 .8rem}
 .daylist{list-style:none}
 .daylist a{display:flex;align-items:center;gap:.85rem;padding:.62rem .3rem;border-bottom:1px dashed var(--line);color:var(--ink)}
-.daylist .dn{font-family:var(--serif-en);font-size:.75rem;letter-spacing:.1em;color:var(--muted);min-width:3.4em}
+.daylist .dn{font-family:var(--serif-en);font-size:.9rem;letter-spacing:.1em;color:var(--muted);min-width:3.4em}
 .daylist .dot{margin-left:auto;width:.6rem;height:.6rem;border-radius:50%;border:1.5px solid var(--line)}
 .daylist .dot.done{background:var(--love);border-color:var(--love)}
 /* day page */
 .daypg{padding-top:3rem}
 .wkbanner{border:1px solid var(--line);background:#fff;border-radius:14px;padding:1.3rem 1.4rem;margin-bottom:2.4rem}
-.wkbanner .wkno{font-family:var(--serif-en);letter-spacing:.2em;font-size:.75rem;color:var(--love)}
+.wkbanner .wkno{font-family:var(--serif-en);letter-spacing:.2em;font-size:.95rem;color:var(--love)}
 .wkbanner h2{font-family:var(--serif-ja);font-size:1.25rem;margin:.3rem 0 .6rem;font-weight:600}
 body.en .wkbanner h2{font-family:var(--serif-en);font-size:1.45rem}
 .wkbanner .wi{font-size:.9rem;line-height:2}
@@ -153,8 +153,8 @@ const FORM_BEFORE = "https://docs.google.com/forms/d/e/1FAIpQLSevPUT8MHcNZ-dp7Ye
 const FORM_AFTER  = "https://docs.google.com/forms/d/e/1FAIpQLSeVR8DQe7Nox9cqlwp2YIfVS3bxFdhzzRwAtL0vesFKsKGVPg/viewform?usp=publish-editor";
 </script>
 
-<script src="content-ja.js?v=5"></script>
-<script src="content-en.js?v=5"></script>
+<script src="content-ja.js?v=6"></script>
+<script src="content-en.js?v=6"></script>
 <script>
 const UI = {
  ja:{home:'目次',prev:'← 前の日',next:'次の日 →',q:'💭 味わう問い',pr:'🙏 今日の一言',j:'✍️ 今日の一行',jj:'✍️ 今日の日記',th:'今日のテーマ',
@@ -212,6 +212,15 @@ function renderSections(secs){
     else if(s.pr!==undefined){ h+=`<div class="seclabel">${u.pr}</div><div class="prayer">${fmt(s.pr).replace(/\n/g,'<br>')}</div>`; if(s.note) h+=`<div class="prnote">${fmt(s.note).replace(/\n/g,'<br>')}</div>`; }
     else if(s.j!==undefined){ const multi=s.j.length>1; h+=`<div class="seclabel">${multi?u.jj:u.j}</div><div class="journal">${s.j.map(it=> typeof it==='string' ? `<div class="jl">${fmt(it)}</div>` : `<div class="jl"><span class="lab">${fmt(it.label)}</span>${fmt(it.x)}</div>`).join('')}</div>`; }
     else if(s.h!==undefined) h+=`<h2 class="cnh" style="font-family:var(--serif-ja);font-size:1.2rem;margin:2.6rem 0 .9rem;font-weight:600">${fmt(s.h)}</h2>`;
+    else if(s.survey!==undefined){
+      const url = s.survey==='before' ? FORM_BEFORE : FORM_AFTER;
+      const btnlabel = s.survey==='before' ? UI[lang].surveyB : UI[lang].surveyA;
+      h+=`<div class="card" style="border-color:var(--love);margin:2.4rem 0">`;
+      h+=`<div class="seclabel" style="margin:0 0 .9rem">${fmt(s.h)}</div>`;
+      h+=`<div class="body" style="font-size:.9rem">${paras(s.p)}</div>`;
+      h+=`<div class="btnrow" style="margin-top:1rem"><a class="btn primary" href="${url}" target="_blank" rel="noopener">${esc(btnlabel)}</a></div>`;
+      h+=`</div>`;
+    }
     else if(s.door!==undefined) h+=doorCard();
     else if(s.btn!==undefined) h+=`<div style="text-align:center;margin:1.6rem 0 2.2rem"><a class="btn primary" href="${s.btn.href}">${fmt(s.btn.x)}</a></div>`;
     else if(s.formula!==undefined) h+=`<div class="formula">${esc(s.formula)}</div>`;
@@ -236,11 +245,7 @@ function renderHome(){
     <p style="font-size:.82rem;color:var(--muted);margin-top:.9rem">${esc(u.ready)}</p>
     <div style="text-align:center;margin:1.2rem 0 .2rem"><a class="btn primary" href="#d1">${esc(u.start)}</a></div>
   </div>`;
-  // surveys — always shown now (URLs are set)
-  h+=`<div class="card"><h3>${esc(u.survey)}</h3><p style="font-size:.85rem;color:var(--muted)">${esc(u.surveyNote)}</p><div class="btnrow">`;
-  h+=`<a class="btn" href="${FORM_BEFORE}" target="_blank" rel="noopener">${esc(u.surveyB)}</a>`;
-  h+=`<a class="btn" href="${FORM_AFTER}" target="_blank" rel="noopener">${esc(u.surveyA)}</a>`;
-  h+=`</div></div>`;
+  // surveys moved into Day 1 (before) and Day 31 (after)
   // TOC
   h+=`<div class="toc">`;
   for(const w of c.weeks){
