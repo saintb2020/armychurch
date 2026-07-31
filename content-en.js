@@ -1034,22 +1034,22 @@ The old has gone.
 ]}
 
 ,study:{
-title:'The Study',
+title:'The Guide',
 doorsHead:'LOVE｜Why everyone wants to taste',
 gatesHead:'TASTE & SEE｜How to taste God',
 doors:[
 {no:'LOVE 1',title:'Without love, does the world mean anything?',
 q:['If no one else existed in the world, would you keep doing what you\'re working so hard at now? Why?','When did you most feel "I\'m glad to be alive"? — Were there people in that moment?','If you had to name the single most important thing in relationships, what would it be?'],
 refs:[{t:'Without love, everything is meaningless',r:'1 Corinthians 13:1–3'},{t:'God is love',r:'1 John 4:7–8'},{t:'Love is patient, love is kind',r:'1 Corinthians 13:4–8'}],
-dec:'Do you want to get to know the God who is love?',decNote:'If YES — go to the "TASTE & SEE" study.'},
+dec:'Do you want to get to know the God who is love?',decNote:'If YES — go to the "TASTE & SEE" guide.'},
 {no:'LOVE 2',title:'Why do people need love?',
 q:['What kinds of love have you searched for so far? (family, friendship, romance…)','When do you most feel "I want to be loved"?','If we\'re searching for it, does that mean something is missing? What do you think?'],
 refs:[{t:'Eating the forbidden fruit brought death — the connection with Love (God) died',r:'Genesis 2:16–17 / 3:6–8'},{t:'Through one man, sin and death entered',r:'Romans 5:12'},{t:'Through the second Adam, the love that died comes back to life',r:'1 Corinthians 15:21–22, 45'},{t:'Through one act of obedience, many are made righteous',r:'Romans 5:18–19'}],
-dec:'That feeling that the real you has died — do you want it brought back to life?',decNote:'If YES — go to the "TASTE & SEE" study.'},
+dec:'That feeling that the real you has died — do you want it brought back to life?',decNote:'If YES — go to the "TASTE & SEE" guide.'},
 {no:'LOVE 3',title:'How can we be filled with love?',
 q:['Can you picture someone "overflowing with love"? Why do you think they can be that way?','When does your own love run dry?','Where do you think love comes from?'],
 refs:[{t:'A branch cut off from the vine cannot bear fruit',r:'John 15:4–5'},{t:'The fruit of the Spirit is love',r:'Galatians 5:22–23'},{t:'Nothing can separate us from the love of God',r:'Romans 8:38–39'},{t:'Salvation is grace, through faith',r:'Ephesians 2:8–9'}],
-dec:'To be filled with love always — do you want to be connected to God\'s love?',decNote:'If YES — go to the "TASTE & SEE" study.'}
+dec:'To be filled with love always — do you want to be connected to God\'s love?',decNote:'If YES — go to the "TASTE & SEE" guide.'}
 ],
 gates:[
 {no:'TASTE & SEE 1',title:'Can imperfect people taste a perfect God?',
@@ -1058,7 +1058,7 @@ refs:[{t:'All have sinned',r:'Romans 3:23'},{t:"Through Jesus' sacrifice, we can
 {no:'TASTE & SEE 2',title:'Can I taste him without understanding everything?',
 p:`If a friend said, "I know someone you'd totally hit it off with — can I introduce you?"\nwhat would you do?\n\nYou wouldn't say, "Not until I understand everything about them."\n\nYou'd just meet them.\nWhether you click — **you find out by meeting.**\n\nIt's the same with God.\nNot "after I understand everything."\n\n**First, meet him.**\n\nIt's fine to start small.\nStaying in the dark is the real waste.`,
 refs:[{t:'Taste and see that the LORD is good',r:'Psalm 34:8'},{t:'Do not despise small beginnings',r:'Zechariah 4:10'},{t:'Not knowing darkens the heart',r:'Ephesians 4:18'},{t:'Even Peter started with "Go away from me"',r:'Luke 5:8, 10–11'}],
-dec:'Will you taste God?',decNote:'If YES — on to "So how do I taste him?"',decHref:'#g3',decBtn:'Next study'},
+dec:'Will you taste God?',decNote:'If YES — on to "So how do I taste him?"',decHref:'#g3',decBtn:'Next guide'},
 {no:'TASTE & SEE 3',title:'So how do I taste him?',
 p:`It's simple. **The one-month challenge.**\n\n**① Read the Bible and journal: 5 minutes a day**\n**② Pray one line — "If You're real, show me in a way I can understand": 30 seconds a day**\n**③ Gather with the church: 2 hours a week**\n\nIf you had some unknown invention and couldn't figure it out no matter how much you fiddled with it — what would you do?\nRead the manual, or ask the person who made it.\n\nThe Bible is our manual.\nGod is the one who made us.\nAnd church is where it all runs best.`,
 refs:[{t:'The truth will set you free',r:'John 8:31–32'},{t:'God hears our prayers',r:'1 John 5:14–15'},{t:'People flourish in the right environment',r:'Psalm 1:1–3'}],

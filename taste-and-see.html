@@ -161,8 +161,8 @@ const FORM_BEFORE = "https://docs.google.com/forms/d/e/1FAIpQLSevPUT8MHcNZ-dp7Ye
 const FORM_AFTER  = "https://docs.google.com/forms/d/e/1FAIpQLSeVR8DQe7Nox9cqlwp2YIfVS3bxFdhzzRwAtL0vesFKsKGVPg/viewform";
 </script>
 
-<script src="content-ja.js?v=8"></script>
-<script src="content-en.js?v=8"></script>
+<script src="content-ja.js?v=9"></script>
+<script src="content-en.js?v=9"></script>
 <script>
 const UI = {
  ja:{home:'目次',prev:'← 前の日',next:'次の日 →',q:'💭 味わう問い',pr:'🙏 今日の一言',j:'✍️ 今日の一行',jj:'✍️ 今日の日記',th:'今日のテーマ',
@@ -172,8 +172,8 @@ const UI = {
      survey:'アンケート',surveyB:'記録する',surveyA:'記録する',
      surveyNote:'チャレンジを始める前に「開始前」、31日終えたら「完了後」に答えてね。',
      done:'今日の分を終えた',doneOn:'✓ 完了！よくやった',finalwk:'FINAL',qlabel:'💭 最後の問い',
-     openq:'💬 オープンクエスチョン',decq:'❓ 決断の問い',scrip:'📖 聖書をひらく',toGate:'「TASTE & SEE」のスタディへ',toDay1:'DAY 1 を始める',
-     studyCard:'STEP 1｜味わう前に',studyCardNote:'チャレンジの前に、まず「なぜ味わいたいのか」と「どうやって味わうのか」を知ろう。グループでも、一人でも学べる2つのスタディ。',studyOpen:'スタディをひらく',backStudy:'スタディ目次',
+     openq:'💬 オープンクエスチョン',decq:'❓ 決断の問い',scrip:'📖 聖書をひらく',toGate:'「TASTE & SEE」のガイドへ',toDay1:'DAY 1 を始める',
+     studyCard:'STEP 1｜味わう前に',studyCardNote:'チャレンジの前に、まず「なぜ味わいたいのか」と「どうやって味わうのか」を知ろう。グループでも、一人でも学べる2つのガイド。',studyOpen:'ガイドをひらく',backStudy:'ガイド目次',
      howTitle:'STEP 2｜神様を味わう31日',howTitle_en:'STEP 2｜TASTE & SEE',
      howItems:['聖書を読んで日記をつける：毎日5分','「私に分かるように存在を見せて」と一言祈る：毎日30秒','教会に集う：毎週2時間'],
      ready:'READY WHEN YOU ARE — 決断のタイミングは、君が決めていい。扉はいつでも開いている。'},
@@ -184,8 +184,8 @@ const UI = {
      survey:'Surveys',surveyB:'Record it',surveyA:'Record it',
      surveyNote:'Take the “before” survey when you start, and the “after” survey once you finish Day 31.',
      done:'Mark today as done',doneOn:'✓ Done! Well done',finalwk:'FINAL',qlabel:'💭 The final questions',
-     openq:'💬 Open questions',decq:'❓ The decision question',scrip:'📖 Open the Bible',toGate:'To the "TASTE & SEE" study',toDay1:'Start DAY 1',
-     studyCard:'STEP 1｜Before you taste',studyCardNote:'Before the challenge, learn why you\'d want to taste, and how to taste. Two studies — in a group, or on your own.',studyOpen:'Open the study',backStudy:'Study contents',
+     openq:'💬 Open questions',decq:'❓ The decision question',scrip:'📖 Open the Bible',toGate:'To the "TASTE & SEE" guide',toDay1:'Start DAY 1',
+     studyCard:'STEP 1｜Before you taste',studyCardNote:'Before the challenge, learn why you\'d want to taste, and how to taste. Two guides — in a group, or on your own.',studyOpen:'Open the guide',backStudy:'Guide contents',
      howTitle:'STEP 2｜TASTE & SEE',howTitle_en:'STEP 2｜TASTE & SEE',
      howItems:['Read the Bible and journal: 5 minutes a day','Pray one line — "If You\'re real, show me in a way I can understand": 30 seconds a day','Gather with the church: 2 hours a week'],
      ready:'READY WHEN YOU ARE — You decide the timing. The door is always open.'}
@@ -295,7 +295,7 @@ function decBlock(dec,note,href,btn){
 function renderStudy(){
   const c=C(), u=UI[lang], s=c.study;
   if(!s||!s.gates){ return `<div class="daypg"><p>ページのデータが古い可能性があります。ページを再読み込み（スーパーリロード）してください。<br>The page data may be outdated. Please hard-refresh this page.</p></div>`; }
-  let h=`<div class="daypg"><div class="dayno">STUDY</div><h1 class="daytitle">${fmt(s.title)}</h1>`;
+  let h=`<div class="daypg"><div class="dayno">GUIDE</div><h1 class="daytitle">${fmt(s.title)}</h1>`;
   h+=`<div class="wkblock"><div class="wkhead"><h2>${fmt(s.doorsHead)}</h2></div><ul class="daylist">`;
   s.doors.forEach((d,i)=>{ h+=`<li><a href="#s${i+1}"><span class="dn">${i+1}</span><span>${fmt(d.title)}</span></a></li>`; });
   h+=`</ul></div><div class="wkblock"><div class="wkhead"><h2>${fmt(s.gatesHead)}</h2></div><ul class="daylist">`;
