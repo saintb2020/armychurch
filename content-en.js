@@ -1035,8 +1035,8 @@ The old has gone.
 
 ,study:{
 title:'The Study',
-doorsHead:'LOVE',
-gatesHead:'TASTE & SEE',
+doorsHead:'LOVE｜Why everyone wants to taste',
+gatesHead:'TASTE & SEE｜How to taste God',
 doors:[
 {no:'LOVE 1',title:'Without love, does the world mean anything?',
 q:['If no one else existed in the world, would you keep doing what you\'re working so hard at now? Why?','When did you most feel "I\'m glad to be alive"? — Were there people in that moment?','If you had to name the single most important thing in relationships, what would it be?'],
