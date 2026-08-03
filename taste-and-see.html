@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TASTE &amp; SEE｜神様を味わう31日</title>
-<meta name="description" content="神様を味わう31日チャレンジ。毎日5分の聖書と日記、30秒の祈り。全部信じてなくていい。まず味わってみよう。">
+<title>テイセンシー｜神様を味わう1ヶ月チャレンジ</title>
+<meta name="description" content="テイセンシー｜神様を味わう1ヶ月チャレンジ。毎日5分の聖書と日記、30秒の祈り。全部信じてなくていい。まず味わってみよう。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
@@ -42,6 +42,8 @@ header{position:sticky;top:0;background:rgba(255,253,249,.92);backdrop-filter:bl
 .hero{padding:4.2rem 0 2.6rem;text-align:center}
 .hero .eyebrow{font-family:var(--serif-ja);letter-spacing:.14em;font-size:1.15rem;font-weight:600;color:var(--love)}
 body.en .hero .eyebrow{font-family:var(--serif-en);letter-spacing:.28em;font-size:1.05rem}
+.hero .heroverse{font-family:var(--serif-ja);font-size:.85rem;color:var(--muted);margin-top:.8rem;line-height:1.9}
+body.en .hero .heroverse{font-family:var(--serif-en);font-size:.95rem;font-style:italic}
 .hero h1{font-family:var(--serif-ja);font-size:2rem;line-height:1.6;margin:.9rem 0 .4rem;font-weight:600}
 body.en .hero h1{font-family:var(--serif-en);font-size:2.5rem;line-height:1.2}
 .hero .verse{font-family:var(--serif-ja);color:var(--muted);font-size:.95rem;margin-top:1.1rem}
@@ -161,8 +163,8 @@ const FORM_BEFORE = "https://docs.google.com/forms/d/e/1FAIpQLSevPUT8MHcNZ-dp7Ye
 const FORM_AFTER  = "https://docs.google.com/forms/d/e/1FAIpQLSeVR8DQe7Nox9cqlwp2YIfVS3bxFdhzzRwAtL0vesFKsKGVPg/viewform";
 </script>
 
-<script src="content-ja.js?v=9"></script>
-<script src="content-en.js?v=9"></script>
+<script src="content-ja.js?v=10"></script>
+<script src="content-en.js?v=10"></script>
 <script>
 const UI = {
  ja:{home:'目次',prev:'← 前の日',next:'次の日 →',q:'💭 味わう問い',pr:'🙏 今日の一言',j:'✍️ 今日の一行',jj:'✍️ 今日の日記',th:'今日のテーマ',
@@ -243,12 +245,12 @@ function renderHome(){
   // plain header — no title/verse/intro (moved into STEP 2 card)
   let h=`<div class="hero">
     <div class="eyebrow">${esc(c.title)}</div>
+    <div class="heroverse">${fmt(c.heroVerse)}</div>
   </div>`;
   // STEP 1
   h+=`<div class="card" style="border-color:var(--love)"><h3>${esc(u.studyCard)}</h3><p style="font-size:.85rem;color:var(--muted)">${esc(u.studyCardNote)}</p><div class="btnrow"><a class="btn primary" href="#study">${esc(u.studyOpen)}</a></div></div>`;
   // STEP 2 — contains hero content
   h+=`<div class="card"><h3>${esc(u.howTitle)}</h3>
-    <div class="verse" style="margin:.9rem 0 1rem">${fmt(c.heroVerse)}</div>
     <div class="body" style="font-size:.9rem;margin-bottom:1rem">${paras(c.intro)}</div>
     <ul>${u.howItems.map(x=>'<li style="margin:.35rem 0;padding-left:1.35em;position:relative"><span style="position:absolute;left:0;color:var(--love);font-weight:700">✓</span>'+esc(x)+'</li>').join('')}</ul>
     <p style="font-size:.82rem;color:var(--muted);margin-top:.9rem">${esc(u.ready)}</p>

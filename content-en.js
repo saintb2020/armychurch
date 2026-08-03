@@ -1,6 +1,6 @@
 const CONTENT_EN = {
-title:'31 Days of Tasting God',
-heroVerse:'"Taste and see that the LORD is good." — Psalm 34:8',
+title:'TASTE & SEE｜A One-Month Challenge of Tasting God',
+heroVerse:'"Taste and see that the LORD is good." — The Bible, Psalm 34:8',
 intro:`You don't have to believe all of it.
 You don't need to know anything about the Bible.
 
