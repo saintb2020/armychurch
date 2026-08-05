@@ -299,6 +299,19 @@ header.solid nav a.navlink:hover{color:var(--red)}
   .flow-ill{max-width:260px;margin:14px auto 0}
 }
 
+/* ===== RESOURCES ===== */
+.res-sec{background:var(--paper)}
+.res-list{max-width:820px;margin:0 auto;display:grid;gap:16px}
+.res-card{display:block;border:1.5px solid rgba(13,13,13,.12);border-radius:4px;padding:26px 28px;transition:border-color .25s,transform .25s,box-shadow .25s;background:var(--paper)}
+.res-card:hover{border-color:var(--red);transform:translateY(-2px);box-shadow:0 8px 26px rgba(13,13,13,.07)}
+.res-card .res-tag{display:inline-block;font-weight:900;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.res-card h3{font-size:clamp(19px,2.4vw,24px);font-weight:900;color:var(--black);line-height:1.45}
+.res-card .res-en{font-family:var(--font-script);font-weight:700;color:var(--red);font-size:20px;line-height:1.2;margin-top:4px;display:block}
+.res-card p{font-size:14.5px;color:#3d3d3d;margin-top:12px;line-height:1.9}
+.res-card p.en{font-size:12.5px;color:var(--gray);margin-top:6px}
+.res-card .res-go{display:inline-block;margin-top:16px;font-weight:900;font-size:13.5px;letter-spacing:.06em;color:var(--red)}
+.res-soon{text-align:center;font-size:13px;color:var(--gray);margin-top:26px;letter-spacing:.04em}
+
 /* ===== FAQ ===== */
 .faq-sec{background:var(--mist)}
 .faq-list{max-width:820px;margin:0 auto}
@@ -385,6 +398,7 @@ footer .see-you .love{color:#fff;margin-right:6px}
       <a class="navlink" href="#code">About</a>
       <a class="navlink" href="#sunday">Sunday</a>
       <a class="navlink" href="#faq">FAQ</a>
+      <a class="navlink" href="#resources">Resources</a>
       <a class="navlink" href="#info">Access</a>
       <a class="nav-cta" href="#info">日曜、行ってみる？</a>
     </nav>
@@ -688,6 +702,28 @@ footer .see-you .love{color:#fff;margin-right:6px}
         <div class="faq-a">全然OKです。途中参加も途中退出も自由なので、気にせずどうぞ。<p class="en">Totally fine. Come and go freely.</p></div>
       </details>
     </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="section res-sec" id="resources">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="label">Resources</span>
+      <h2>Resources</h2>
+      <p class="jp">神様を知るための、道具箱。 <span class="script">Take one home!</span></p>
+    </div>
+    <div class="res-list reveal">
+      <a class="res-card" href="taste-and-see.html">
+        <span class="res-tag">1-Month Challenge</span>
+        <h3>TASTE &amp; SEE｜神様を味わう1ヶ月チャレンジ</h3>
+        <span class="res-en">Taste and see that the Lord is good.</span>
+        <p>知識じゃなく、体験から。1ヶ月間、1日5分。聖書の言葉と3つの問いを通して、神様を「味わって」いくチャレンジです。クリスチャンでない方も、今日から始められます。</p>
+        <p class="en">Not information — experience. Five minutes a day for one month. Scripture, three questions, and a short prayer. Start today, wherever you are.</p>
+        <span class="res-go">はじめる →</span>
+      </a>
+    </div>
+    <p class="res-soon">リソースは随時追加していきます。 <span class="script">More coming soon!</span></p>
   </div>
 </section>
 
