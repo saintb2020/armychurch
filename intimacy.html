@@ -155,8 +155,8 @@ body.en .doorcard .t{font-family:var(--serif-en);font-size:1.25rem}
   <a href="#decide"><span class="hb">❤</span><span id="doortext"></span></a>
 </div>
 
-<script src="content-intimacy-ja.js?v=1"></script>
-<script src="content-intimacy-en.js?v=1"></script>
+<script src="content-intimacy-ja.js?v=2"></script>
+<script src="content-intimacy-en.js?v=2"></script>
 <script>
 const UI = {
  ja:{home:'目次', prev:'← 前へ', next:'次へ →',
@@ -185,7 +185,8 @@ let doneSet = new Set();
 try{ doneSet = new Set(JSON.parse(localStorage.getItem('it_done')||'[]')); }catch(e){}
 function saveDone(){ try{ localStorage.setItem('it_done', JSON.stringify([...doneSet])); }catch(e){} }
 
-const C = ()=> (lang==='en' && typeof CONTENT_IT_EN!=='undefined' && CONTENT_IT_EN) ? CONTENT_IT_EN : CONTENT_IT_JA;
+const hasEN = ()=> (typeof CONTENT_IT_EN!=='undefined') && CONTENT_IT_EN && Array.isArray(CONTENT_IT_EN.sections) && CONTENT_IT_EN.sections.length>0;
+const C = ()=> (lang==='en' && hasEN()) ? CONTENT_IT_EN : CONTENT_IT_JA;
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
 /* ---------- inline markdown ---------- */
@@ -408,13 +409,14 @@ function route(){
   document.getElementById('btnen').classList.toggle('on',lang==='en');
 }
 function setLang(l){
-  if(l==='en' && typeof CONTENT_IT_EN==='undefined'){ return; }
+  if(l==='en' && !hasEN()){ return; }
   lang=l; try{localStorage.setItem('it_lang',l);}catch(e){} route();
 }
 document.getElementById('btnja').addEventListener('click',()=>setLang('ja'));
 document.getElementById('btnen').addEventListener('click',()=>setLang('en'));
 window.addEventListener('hashchange',route);
-if(typeof CONTENT_IT_EN==='undefined'){ document.getElementById('btnen').style.display='none'; }
+if(!hasEN()){ document.getElementById('btnen').style.display='none'; }
+if(lang==='en' && !hasEN()){ lang='ja'; }
 route();
 </script>
 </body>
