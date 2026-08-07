@@ -130,6 +130,13 @@ body.en .chtitle{font-family:var(--serif-en);font-size:1.45rem;line-height:1.3}
 .doorcard .t{font-family:var(--serif-ja);font-weight:600;font-size:1.05rem}
 body.en .doorcard .t{font-family:var(--serif-en);font-size:1.25rem}
 .doorcard p{font-size:.88rem;color:var(--muted);margin:.5rem 0 .9rem}
+/* next phase card */
+.nextcard{border:1.5px solid var(--ink);background:#fff;border-radius:16px;padding:1.5rem 1.5rem;margin:2.8rem 0 0;text-align:center}
+.nextcard .np{font-family:var(--serif-en);font-weight:600;letter-spacing:.28em;font-size:.8rem;color:var(--muted)}
+.nextcard .t{font-family:var(--serif-ja);font-weight:600;font-size:1.35rem;margin:.35rem 0 .1rem}
+body.en .nextcard .t{font-family:var(--serif-en);font-size:1.6rem}
+.nextcard p{font-size:.88rem;color:var(--muted);margin:.6rem 0 1rem;line-height:1.9}
+body.en .nextcard p{line-height:1.6}
 /* connect page */
 .cn h1{font-family:var(--serif-ja);font-size:1.7rem;line-height:1.6;margin:.5rem 0 2rem;font-weight:600}
 body.en .cn h1{font-family:var(--serif-en);font-size:2.15rem;line-height:1.25}
@@ -161,6 +168,7 @@ body.en .bigq{font-family:var(--serif-en);font-size:1.6rem;line-height:1.4}
 <main class="wrap" id="app"></main>
 <footer class="footer" style="max-width:39rem;margin:0 auto;padding:1.5rem 1.35rem 6.5rem">
   <p>TASTE &amp; SEE — <a href="/">ARMY CHURCH</a>｜Nakameguro, Tokyo</p>
+  <p style="margin-top:.4rem"><a href="intimacy.html">インテマシー｜INTIMACY →</a></p>
   <p style="margin-top:.4rem"><a href="/">教会のトップページへ｜Back to armychurch.jp →</a></p>
 </footer>
 <div class="doorfix" id="doorfix" hidden>
@@ -177,8 +185,8 @@ const FORM_BEFORE = "https://docs.google.com/forms/d/e/1FAIpQLSevPUT8MHcNZ-dp7Ye
 const FORM_AFTER  = "https://docs.google.com/forms/d/e/1FAIpQLSeVR8DQe7Nox9cqlwp2YIfVS3bxFdhzzRwAtL0vesFKsKGVPg/viewform";
 </script>
 
-<script src="content-ja.js?v=11"></script>
-<script src="content-en.js?v=11"></script>
+<script src="content-ja.js?v=12"></script>
+<script src="content-en.js?v=12"></script>
 <script>
 const UI = {
  ja:{home:'目次',prev:'← 前の日',next:'次の日 →',q:'💭 味わう問い',pr:'🙏 今日の一言',j:'✍️ 今日の一行',jj:'✍️ 今日の日記',th:'今日のテーマ',
@@ -191,6 +199,9 @@ const UI = {
      openq:'💬 オープンクエスチョン',decq:'❓ 決断の問い',scrip:'📖 聖書をひらく',toGate:'「TASTE & SEE」のガイドへ',toDay1:'DAY 1 を始める',
      studyCard:'STEP 1｜味わう前に',studyCardNote:'チャレンジの前に、まず「なぜ味わいたいのか」と「どうやって味わうのか」を知ろう。グループでも、一人でも学べる2つのガイド。',studyOpen:'ガイドをひらく',backStudy:'ガイド目次',
      howTitle:'STEP 2｜神様を味わう1ヶ月チャレンジ',howTitle_en:'STEP 2｜TASTE & SEE',
+     nextTitle:'インテマシー｜神様と親密になる',
+     nextNote:'洗礼を受けたら、次は「神様と親密になる」。神様は、もう僕たちの一番近くにいる。第2弾のガイドが、ここから始まる。',
+     nextBtn:'インテマシーをひらく',
      howItems:['聖書を読んで日記をつける：毎日5分','「私に分かるように存在を見せて」と一言祈る：毎日30秒','教会に集う：毎週2時間'],
      ready:'READY WHEN YOU ARE — 決断のタイミングは、君が決めていい。扉はいつでも開いている。'},
  en:{home:'Contents',prev:'← Previous',next:'Next →',q:'💭 Questions to taste',pr:'🙏 Today\'s prayer',j:'✍️ Today\'s one line',jj:'✍️ Today\'s journal',th:'Today\'s theme',
@@ -203,6 +214,9 @@ const UI = {
      openq:'💬 Open questions',decq:'❓ The decision question',scrip:'📖 Open the Bible',toGate:'To the "TASTE & SEE" guide',toDay1:'Start DAY 1',
      studyCard:'STEP 1｜Before you taste',studyCardNote:'Before the challenge, learn why you\'d want to taste, and how to taste. Two guides — in a group, or on your own.',studyOpen:'Open the guide',backStudy:'Guide contents',
      howTitle:'STEP 2｜TASTE & SEE',howTitle_en:'STEP 2｜TASTE & SEE',
+     nextTitle:'INTIMACY｜Growing close to God',
+     nextNote:'After baptism, the next step is growing close to God. He is already as close as He can get. The second guide starts here.',
+     nextBtn:'Open INTIMACY',
      howItems:['Read the Bible and journal: 5 minutes a day','Pray one line — "If You\'re real, show me in a way I can understand": 30 seconds a day','Gather with the church: 2 hours a week'],
      ready:'READY WHEN YOU ARE — You decide the timing. The door is always open.'}
 };
@@ -224,6 +238,10 @@ function paras(s){
 function doorCard(){
   const u=UI[lang];
   return `<div class="doorcard"><div class="t">❤️ ${esc(u.door)}</div><p>${esc(u.doorNote)}</p><a class="btn primary" href="#connect">${esc(u.doorBtn)}</a></div>`;
+}
+function nextPhaseCard(){
+  const u=UI[lang];
+  return `<div class="nextcard"><div class="np">NEXT PHASE</div><div class="t">${esc(u.nextTitle)}</div><p>${esc(u.nextNote)}</p><a class="btn primary" href="intimacy.html">${esc(u.nextBtn)}</a></div>`;
 }
 function renderSections(secs){
   const u=UI[lang];
@@ -338,7 +356,7 @@ function renderGate(i){
 }
 function renderBaptism(){
   const c=C();
-  return `<div class="daypg cn"><div class="dayno">WATER BAPTISM</div><h1>${fmt(c.baptism.title)}</h1>${renderSections(c.baptism.sec)}</div>`;
+  return `<div class="daypg cn"><div class="dayno">WATER BAPTISM</div><h1>${fmt(c.baptism.title)}</h1>${renderSections(c.baptism.sec)}${nextPhaseCard()}</div>`;
 }
 function renderConnect(){
   const c=C();
