@@ -147,9 +147,9 @@ body.en .doorcard .t{font-family:var(--serif-en);font-size:1.25rem}
 <main class="wrap" id="app"></main>
 <footer class="footer" style="max-width:39rem;margin:0 auto;padding:1.5rem 1.35rem 6.5rem">
   <p>INTIMACY — <a href="/">ARMY CHURCH</a>｜Nakameguro, Tokyo</p>
-  <p style="margin-top:.4rem"><a href="taste-and-see.html">← テイセンシー｜TASTE &amp; SEE</a></p>
-  <p style="margin-top:.4rem"><a href="/">教会のトップページへ｜Back to armychurch.jp →</a></p>
-  <p style="margin-top:.8rem;font-size:.72rem">聖句リンク：リビングバイブル（YouVersion）</p>
+  <p style="margin-top:.4rem"><a href="taste-and-see.html">← TASTE &amp; SEE</a></p>
+  <p style="margin-top:.4rem"><a href="/">armychurch.jp →</a></p>
+  <p style="margin-top:.8rem;font-size:.72rem" id="verNote"></p>
 </footer>
 <div class="doorfix" id="doorfix" hidden>
   <a href="#decide"><span class="hb">❤</span><span id="doortext"></span></a>
@@ -195,6 +195,7 @@ function inline(s){
   t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,
     '<a href="$2" target="_blank" rel="noopener">$1</a>');
   t = t.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+  if(lang==='en') t = t.replace(/【([^】]+)】/g,'"$1"');
   return t;
 }
 const BIBLE_LINE = /^(?:\*\*)?\[([^\]]+)\]\((https?:\/\/www\.bible\.com[^)]+)\)(?:\*\*)?$/;
@@ -223,7 +224,13 @@ function renderMd(md){
 
     // 【section label】
     let m = t.match(SECLABEL);
-    if(m){ closePara(); out+='<div class="seclabel">'+esc(m[1])+(m[2]?'<span style="font-weight:400;color:var(--muted);font-size:.85rem">'+esc(m[2])+'</span>':'')+'</div>'; i++; continue; }
+    if(m){
+      closePara();
+      let lab = m[1];
+      if(lang==='en') lab = lab.replace(/[【】]/g,'');
+      out+='<div class="seclabel">'+esc(lab)+(m[2]?'<span style="font-weight:400;color:var(--muted);font-size:.85rem">'+esc(m[2])+'</span>':'')+'</div>';
+      i++; continue;
+    }
 
     // ⚠️ warning block
     if(t.startsWith('**⚠️')){
@@ -377,6 +384,9 @@ function route(){
   document.body.className = lang==='en'?'en':'';
   document.documentElement.lang = lang;
   document.getElementById('doortext').textContent = UI[lang].door;
+  document.getElementById('verNote').textContent = lang==='en'
+    ? 'Scripture links: English Standard Version (YouVersion)'
+    : '聖句リンク：リビングバイブル（YouVersion）';
 
   const known = id && (secById(id) || false);
   if(known){
