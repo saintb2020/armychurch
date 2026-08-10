@@ -2,31 +2,33 @@ const CONTENT_IT_EN = {
 "title": "INTIMACY",
 "subtitle": "Growing close to God",
 "hero": "God is already as close as He can get.",
-"lead": "You can work through this in order, or open only what you need.\n\n**Read the four Introduction sections in order first.** After that, open whatever you need right now.\n\nThere's no finish line. **Once you've been through it, you can come back.**",
+"lead": "You can work through this in order, or open only what you need.\n\n**We recommend reading the four Introduction sections first, in order.**",
+"refLabel": "REF",
+"refTitle": "GUIDE｜Going deeper",
 "groups": [
 {
 "p": "j",
 "label": "PART 1",
-"title": "Introduction",
-"intro": "Read these in order. This is where everything starts."
+"title": "INTRO｜Introduction",
+"intro": "This is where everything starts."
 },
 {
 "p": "h",
 "label": "PART 2",
-"title": "Eight habits for getting close to God",
-"intro": "One goal: growing close. Eight ways to get there. These are doors, not a scorecard."
+"title": "HABITS｜Eight habits for getting close to God",
+"intro": "One goal. Eight ways."
 },
 {
 "p": "f",
 "label": "PART 3",
-"title": "Knowing God",
-"intro": "The order is a suggestion. Take them in any order. Start with the face you need right now."
+"title": "FACES｜Knowing God",
+"intro": "Get to know the many faces of God."
 },
 {
 "p": "w",
 "label": "PART 4",
-"title": "Walls",
-"intro": "Open these when God feels far away. Start anywhere."
+"title": "WALLS｜Walls",
+"intro": "Open these when God feels far away."
 }
 ],
 "refs": [

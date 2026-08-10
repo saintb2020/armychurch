@@ -155,8 +155,8 @@ body.en .doorcard .t{font-family:var(--serif-en);font-size:1.25rem}
   <a href="#decide"><span class="hb">❤</span><span id="doortext"></span></a>
 </div>
 
-<script src="content-intimacy-ja.js?v=2"></script>
-<script src="content-intimacy-en.js?v=2"></script>
+<script src="content-intimacy-ja.js?v=4"></script>
+<script src="content-intimacy-en.js?v=4"></script>
 <script>
 const UI = {
  ja:{home:'目次', prev:'← 前へ', next:'次へ →',
@@ -340,7 +340,7 @@ function renderHome(){
     h+=`</ul></div>`;
   }
   // references
-  h+=`<div class="wkblock"><div class="wkhead"><span class="wkno">REF</span><h2>${esc(u.refHead)}</h2></div><ul class="daylist">`;
+  h+=`<div class="wkblock"><div class="wkhead"><span class="wkno">${esc(c.refLabel||'REF')}</span><h2>${esc(c.refTitle||u.refHead)}</h2></div><ul class="daylist">`;
   for(const r of c.refs){
     h+=`<li><a href="#${r.id}"><span class="dn">·</span><span class="ttl">${esc(r.t)}<span class="sub">${esc(r.s)}</span></span></a></li>`;
   }
