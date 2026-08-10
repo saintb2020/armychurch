@@ -187,8 +187,8 @@ const FORM_BEFORE = "https://docs.google.com/forms/d/e/1FAIpQLSevPUT8MHcNZ-dp7Ye
 const FORM_AFTER  = "https://docs.google.com/forms/d/e/1FAIpQLSeVR8DQe7Nox9cqlwp2YIfVS3bxFdhzzRwAtL0vesFKsKGVPg/viewform";
 </script>
 
-<script src="taste-and-see-ja.js?v=14"></script>
-<script src="taste-and-see-en.js?v=14"></script>
+<script src="taste-and-see-ja.js?v=15"></script>
+<script src="taste-and-see-en.js?v=15"></script>
 <script>
 const UI = {
  ja:{home:'目次',prev:'← 前の日',next:'次の日 →',q:'💭 味わう問い',pr:'🙏 今日の一言',j:'✍️ 今日の一行',jj:'✍️ 今日の日記',th:'今日のテーマ',
@@ -255,7 +255,10 @@ function renderSections(secs){
     }
     else if(s.th!==undefined) h+=`<div class="theme">${u.th}｜<strong>${fmt(s.th)}</strong></div>`;
     else if(s.p!==undefined) h+=`<div class="body">${paras(s.p)}</div>`;
-    else if(s.v!==undefined) h+=`<div class="verse"><div class="ref">📖 ${esc(s.ref)}</div><div class="vt">${fmt(s.v).replace(/\n/g,'<br>')}</div></div>`;
+    else if(s.v!==undefined){
+      const rl = s.u ? `<a class="reflink" href="${s.u}" target="_blank" rel="noopener">📖 ${esc(s.ref)} ↗</a>` : `📖 ${esc(s.ref)}`;
+      h+=`<div class="verse"><div class="ref">${rl}</div><div class="vt">${fmt(s.v).replace(/\n/g,'<br>')}</div></div>`;
+    }
     else if(s.q!==undefined) h+=`<div class="seclabel">${s.label||u.q}</div><ul class="qlist">${s.q.map(x=>'<li>'+fmt(x)+'</li>').join('')}</ul>`;
     else if(s.pr!==undefined){ h+=`<div class="seclabel">${u.pr}</div><div class="prayer">${fmt(s.pr).replace(/\n/g,'<br>')}</div>`; if(s.note) h+=`<div class="prnote">${fmt(s.note).replace(/\n/g,'<br>')}</div>`; }
     else if(s.j!==undefined){ const multi=s.j.length>1; h+=`<div class="seclabel">${multi?u.jj:u.j}</div><div class="journal">${s.j.map(it=> typeof it==='string' ? `<div class="jl">${fmt(it)}</div>` : `<div class="jl"><span class="lab">${fmt(it.label)}</span>${fmt(it.x)}</div>`).join('')}</div>`; }

@@ -84,20 +84,20 @@ days:[
  badge:'CHALLENGE 1',
  h:'Record where you are right now',
  p:`In this 31-day challenge, you'll check how much you've changed\nbefore and after tasting God.\n\nSo first, record where you are right now.\nIn 31 days, you'll answer the same questions again and compare.\n\nThere are no right answers. No need to look good.\n**Just record yourself as you are today.**\n\n※When you submit, a copy of your answers will be sent to your email. Use an address you can access — you'll want to look back on it in 31 days.`},
-{ref:'Jeremiah 31:3',v:'"I have loved you with an everlasting love."'},
-{p:`If God is really there,
-He knew you long before you ever knew Him.
+{ref:'Jeremiah 31:3',u:'https://www.bible.com/bible/59/JER.31.3',v:'"I have loved you with an everlasting love."'},
+{p:`God knew you long before you were born.
 
 Not because you achieved something.
 Not because you're a good person.
 
-**He loves you because you're you.**`},
+Just as a mother loves the child in her womb before it is born,
+**you were loved before you were ever born.**`},
 {q:['When you hear "God loves you with an everlasting love," what\'s your honest reaction?','Is there anyone right now who loves you with a love that never changes?','If someone loved you even more than the person who has loved you most — what would that mean to you?']},
 {pr:'"God, if You\'re really there, show me — in a way I can understand — how much You love me."'},
 {j:['**If I really am loved by God forever, then ________.**']}
 ]},
 {title:"You're not alone",sec:[
-{ref:'Psalm 34:18',v:'"The LORD is close to the brokenhearted."'},
+{ref:'Psalm 34:18',u:'https://www.bible.com/bible/59/PSA.34.18',v:'"The LORD is close to the brokenhearted."'},
 {p:`The things you could never tell anyone.
 The things you've carried alone.
 The pain no one ever understood.
@@ -109,7 +109,7 @@ If God is really there,
 {j:['**Right now, where I most want God beside me is ________.**']}
 ]},
 {title:'You can talk to Him as you are',sec:[
-{ref:'Psalm 62:8',v:'"Pour out your heart before Him."'},
+{ref:'Psalm 62:8',u:'https://www.bible.com/bible/59/PSA.62.8',v:'"Pour out your heart before Him."'},
 {p:`Prayer doesn't require fancy words.
 
 If you're angry, say you're angry.
@@ -122,7 +122,7 @@ If you're doubting, even "Are You actually real?" is fine.
 {j:['**The most honest thing I want to tell God today is ________.**']}
 ]},
 {title:'God is not far away',sec:[
-{ref:'Acts 17:27',v:'"He is not far from each one of us."'},
+{ref:'Acts 17:27',u:'https://www.bible.com/bible/59/ACT.17.27',v:'"He is not far from each one of us."'},
 {p:`You don't have to become a perfect person
 to get to know God.
 
@@ -135,7 +135,7 @@ If what the Bible says is true,
 {j:['**If God were with me all day today, ________.**']}
 ]},
 {title:'Your life has meaning',sec:[
-{ref:'Ephesians 2:10',v:'"We are God\'s workmanship, created in Christ Jesus for good works."'},
+{ref:'Ephesians 2:10',u:'https://www.bible.com/bible/59/EPH.2.10',v:'"We are God\'s workmanship, created in Christ Jesus for good works."'},
 {p:`You're not here by accident.
 
 The Bible calls human beings God's **workmanship** — His work of art.
@@ -150,7 +150,7 @@ If God made you,
 {j:['**If I was made for a purpose, I want to ________ that purpose.**']}
 ]},
 {title:"You don't have to carry it all alone",sec:[
-{ref:'Matthew 11:28',v:'"Come to me, all you who are weary and burdened, and I will give you rest."'},
+{ref:'Matthew 11:28',u:'https://www.bible.com/bible/59/MAT.11.28',v:'"Come to me, all you who are weary and burdened, and I will give you rest."'},
 {p:`These are Jesus' words.
 
 Not "try harder, then come."
@@ -164,7 +164,7 @@ your whole life by yourself.`},
 {j:['**The burden I want to hand to Jesus today is ________.**']}
 ]},
 {title:'Try seeking Him yourself, once',sec:[
-{ref:'Jeremiah 29:13',v:'"You will seek me and find me, when you seek me with all your heart."'},
+{ref:'Jeremiah 29:13',u:'https://www.bible.com/bible/59/JER.29.13',v:'"You will seek me and find me, when you seek me with all your heart."'},
 {p:`You've read for 7 days now.
 
 It's fine if you haven't felt anything yet.
@@ -183,7 +183,7 @@ And wait.`},
 {j:['**The one thing I most want to ask God right now is ________.**']}
 ]},
 {title:'Want to see God? Look at Jesus',sec:[
-{ref:'John 14:9',v:'"Whoever has seen me has seen the Father."'},
+{ref:'John 14:9',u:'https://www.bible.com/bible/59/JHN.14.9',v:'"Whoever has seen me has seen the Father."'},
 {p:`"What is God like?"
 
 Scary? Strict? Distant?
@@ -201,7 +201,7 @@ start by looking at Jesus.`},
 {j:['**The image of God I have right now is ________.**']}
 ]},
 {title:'Jesus moved toward the hurting, not the perfect',sec:[
-{ref:'Mark 2:17',v:'"It is not the healthy who need a doctor, but the sick. I have not come to call the righteous, but sinners."'},
+{ref:'Mark 2:17',u:'https://www.bible.com/bible/59/MRK.2.17',v:'"It is not the healthy who need a doctor, but the sick. I have not come to call the righteous, but sinners."'},
 {p:`"If I'm going to approach God,
 I should become a decent person first."
 Maybe you've thought that.
@@ -218,7 +218,7 @@ the ones whose lives were a mess.
 {j:['**If I can come to Jesus just as I am, then I ________.**']}
 ]},
 {title:'Jesus did not come to condemn you',sec:[
-{ref:'John 3:17',v:'"God did not send his Son into the world to condemn the world, but to save the world through him."'},
+{ref:'John 3:17',u:'https://www.bible.com/bible/59/JHN.3.17',v:'"God did not send his Son into the world to condemn the world, but to save the world through him."'},
 {p:`You know your own failures better than anyone.
 
 "I should have done it differently."
@@ -234,7 +234,7 @@ and say, **"You're a failure."**
 {j:['**The past I want to hand to Jesus today is ________.**']}
 ]},
 {title:'Jesus called you friend',sec:[
-{ref:'John 15:15',v:'"I have called you friends."'},
+{ref:'John 15:15',u:'https://www.bible.com/bible/59/JHN.15.15',v:'"I have called you friends."'},
 {p:`God and "friends."
 It might sound strange.
 
@@ -252,7 +252,7 @@ Jesus called human beings **"friends."**`},
 {j:['**If I could talk one-on-one with Jesus today, I\'d want to talk about ________.**']}
 ]},
 {title:'Jesus gave his life for you',sec:[
-{ref:'John 15:13',v:'"Greater love has no one than this: to lay down one\'s life for one\'s friends."'},
+{ref:'John 15:13',u:'https://www.bible.com/bible/59/JHN.15.13',v:'"Greater love has no one than this: to lay down one\'s life for one\'s friends."'},
 {p:`Saying "I love you" is easy.
 
 Real love shows up
@@ -268,7 +268,7 @@ in action — how much He loves human beings.`},
 {j:['**Hearing "Jesus died for me," what I feel right now is ________.**']}
 ]},
 {title:'Jesus is alive today',sec:[
-{ref:'Revelation 1:18',v:'"I was dead, and behold, I am alive forever and ever."'},
+{ref:'Revelation 1:18',u:'https://www.bible.com/bible/59/REV.1.18',v:'"I was dead, and behold, I am alive forever and ever."'},
 {p:`If Jesus had died and that was the end,
 he might just be one more great figure in history.
 
@@ -287,7 +287,7 @@ If he really rose,
 {j:['**If Jesus is really alive today, then I ________.**']}
 ]},
 {title:'Jesus says, "Come and see"',sec:[
-{ref:'John 1:46',v:'"Come and see."'},
+{ref:'John 1:46',u:'https://www.bible.com/bible/59/JHN.1.46',v:'"Come and see."'},
 {p:`You don't have to understand
 everything about Jesus right now.
 
@@ -317,7 +317,7 @@ Jesus already knew her whole story.
 He didn't avoid her.
 
 Instead, he spoke to her first — and told her what she had really been searching for.`},
-{ref:'John 4:13–14',v:'"Everyone who drinks this water will be thirsty again, but whoever drinks the water I give them will never thirst."'},
+{ref:'John 4:13–14',u:'https://www.bible.com/bible/59/JHN.4.13-14',v:'"Everyone who drinks this water will be thirsty again, but whoever drinks the water I give them will never thirst."'},
 {p:`It's not just our throats that get thirsty. Our hearts do too.
 
 Romance. Success. Approval. Money. Pleasure.
@@ -343,7 +343,7 @@ And said,
 
 Jesus didn't accept Zacchaeus because he changed his life.
 **Being accepted is what changed him.**`},
-{ref:'Luke 19:5',v:'"Zacchaeus, come down at once. I must stay at your house today."'},
+{ref:'Luke 19:5',u:'https://www.bible.com/bible/59/LUK.19.5',v:'"Zacchaeus, come down at once. I must stay at your house today."'},
 {p:`After that, Zacchaeus began changing how he lived — on his own.
 
 The order mattered.
@@ -365,7 +365,7 @@ Jesus didn't say her sin "didn't matter."
 But he didn't join the crowd trying to destroy her either.
 
 When only Jesus was left, he said to her:`},
-{ref:'John 8:10–11',v:'"Neither do I condemn you. Go, and from now on sin no more."'},
+{ref:'John 8:10–11',u:'https://www.bible.com/bible/59/JHN.8.10-11',v:'"Neither do I condemn you. Go, and from now on sin no more."'},
 {p:`Jesus didn't say, **"You're finished."**
 
 He said, **"Start living new — from here."**
@@ -385,7 +385,7 @@ Jesus knew he was about to bring Lazarus back to life.
 
 And still, in front of the grieving,
 **Jesus wept too.**`},
-{ref:'John 11:35',v:'"Jesus wept."'},
+{ref:'John 11:35',u:'https://www.bible.com/bible/59/JHN.11.35',v:'"Jesus wept."'},
 {p:`If God exists, there's pain that makes us ask,
 "Why did You let this happen?"
 
@@ -394,7 +394,7 @@ But Jesus was not a god watching human pain from a distance.
 **He cried with them.**
 
 And then, he brought life where there was death.`},
-{ref:'John 11:25',v:'"I am the resurrection and the life."'},
+{ref:'John 11:25',u:'https://www.bible.com/bible/59/JHN.11.25',v:'"I am the resurrection and the life."'},
 {q:['Has something ever happened that made you ask, "Why did this happen?"','If God was crying right next to you in that moment, does that change how you see Him?','If Jesus could bring life even to what you\'ve given up on as "over" — what would you ask him for?']},
 {pr:'"Jesus, if you really understand my pain, stay with me today. And show me your life even in the places I\'ve already given up on."'},
 {j:['**What I want Jesus to weep with me about today is ________.**']}
@@ -409,7 +409,7 @@ The crowd was too thick to get through.
 So they refused to give up — they opened the roof and lowered him right in front of Jesus.
 
 And what Jesus saw wasn't just the man.`},
-{ref:'Mark 2:5',v:'"When Jesus saw their faith…"'},
+{ref:'Mark 2:5',u:'https://www.bible.com/bible/59/MRK.2.5',v:'"When Jesus saw their faith…"'},
 {p:`**You don't have to reach Jesus on your own.**
 
 When you can't believe for yourself,
@@ -432,7 +432,7 @@ He shouted louder.
 
 Then Jesus stopped and called for him.
 And instead of assuming the answer, he asked:`},
-{ref:'Mark 10:51',v:'"What do you want me to do for you?"'},
+{ref:'Mark 10:51',u:'https://www.bible.com/bible/59/MRK.10.51',v:'"What do you want me to do for you?"'},
 {p:`Jesus is not indifferent to your life.
 
 What you truly long for —
@@ -455,7 +455,7 @@ The only thing he could do
 was ask Jesus for help.
 
 And Jesus said:`},
-{ref:'Luke 23:42–43',v:`"Jesus, remember me when you come into your kingdom."
+{ref:'Luke 23:42–43',u:'https://www.bible.com/bible/59/LUK.23.42-43',v:`"Jesus, remember me when you come into your kingdom."
 Jesus answered him,
 "Truly I tell you, today you will be with me in paradise."`},
 {p:`It wasn't too late.
@@ -493,7 +493,7 @@ Confused.
 Wanting to believe, but still doubting.
 
 Even that — you can say it exactly as it is.`},
-{ref:'Matthew 6:7–8',v:'"When you pray, do not keep babbling like pagans… your Father knows what you need before you ask him."'},
+{ref:'Matthew 6:7–8',u:'https://www.bible.com/bible/59/MAT.6.7-8',v:'"When you pray, do not keep babbling like pagans… your Father knows what you need before you ask him."'},
 {q:['If God already knows everything, there\'s no need to dress up your prayers, right?','To get truly close to someone, don\'t you have to share what\'s real?','If Jesus is listening right here, right now — what do you most want to tell him?']},
 {pr:'"Jesus, I still don\'t really know how to pray. But today I\'ll talk to you as I am. Please listen."',note:'Then take 30 seconds and **say exactly what\'s on your mind right now.**'},
 {j:['**What I most wanted to tell Jesus today: ________**']}
@@ -511,7 +511,7 @@ a voice booming from the sky.
 
 But the safest, simplest place to start is this:
 **read Jesus' words, and listen from there.**`},
-{ref:'John 10:27',v:'"My sheep listen to my voice; I know them, and they follow me."'},
+{ref:'John 10:27',u:'https://www.bible.com/bible/59/JHN.10.27',v:'"My sheep listen to my voice; I know them, and they follow me."'},
 {q:['In a close relationship, both people talk and both people listen, right?','If Jesus is alive today, wouldn\'t it make sense that he has something to say to you?','If you could hear one word from Jesus today, what would you want it to be about?']},
 {pr:'"Jesus, if you really speak to me, speak in a way I can understand. I want to listen."',note:'Today, read a little of one of the Gospels, and **stop at the one line that stays with you most.**'},
 {j:['**The line that stayed with me most today: ________**']}
@@ -531,7 +531,7 @@ Everyone lives carrying invisible baggage.
 
 But Jesus never said,
 "Get stronger and carry it yourself."`},
-{ref:'Matthew 11:28',v:'"Come to me, all you who are weary and burdened, and I will give you rest."'},
+{ref:'Matthew 11:28',u:'https://www.bible.com/bible/59/MAT.11.28',v:'"Come to me, all you who are weary and burdened, and I will give you rest."'},
 {q:['What\'s the heaviest thing you\'re carrying right now?','Do you want to keep carrying it alone forever?','If Jesus will really carry it, do you want to hand it over?']},
 {pr:'"Jesus, I\'ve been carrying ____. I don\'t want to hold it alone anymore. Today, I hand it to you. Help me."'},
 {j:['**What I handed to Jesus today: ________**']}
@@ -546,7 +546,7 @@ So we push ourselves.
 
 But what if God's love
 doesn't rise or fall with your successes and failures?`},
-{ref:'Romans 8:38–39',v:'"Nothing in all creation will be able to separate us from the love of God that is in Christ Jesus our Lord."'},
+{ref:'Romans 8:38–39',u:'https://www.bible.com/bible/59/ROM.8.38-39',v:'"Nothing in all creation will be able to separate us from the love of God that is in Christ Jesus our Lord."'},
 {p:`Just for today, live from this premise:
 
 **"What if I really am loved by God?"**`},
@@ -562,7 +562,7 @@ by thinking about it forever.
 You start small — and actually lean on them.
 
 It's the same with Jesus.`},
-{ref:'1 Peter 5:7',v:'"Cast all your anxiety on him, because he cares for you."'},
+{ref:'1 Peter 5:7',u:'https://www.bible.com/bible/59/1PE.5.7',v:'"Cast all your anxiety on him, because he cares for you."'},
 {p:`Today, you don't have to entrust your whole life.
 
 **Just lean on him for one thing.**`},
@@ -578,7 +578,7 @@ again and again.
 
 So what would happen if today,
 **you let that love flow to one person?**`},
-{ref:'John 13:34',v:'"As I have loved you, so you must love one another."'},
+{ref:'John 13:34',u:'https://www.bible.com/bible/59/JHN.13.34',v:'"As I have loved you, so you must love one another."'},
 {p:`It doesn't have to be big.
 
 Listen to someone.
@@ -603,7 +603,7 @@ And passed that love to someone else.
 
 So — what if this didn't end as one special week,
 **but became an everyday relationship?**`},
-{ref:'John 15:4',v:'"Remain in me, as I also remain in you."'},
+{ref:'John 15:4',u:'https://www.bible.com/bible/59/JHN.15.4',v:'"Remain in me, as I also remain in you."'},
 {p:`What Jesus wants is not a religion
 you visit once in a while.
 
@@ -633,7 +633,7 @@ Today isn't a day to learn something new.
 It's a day to stop and ask:
 
 **"What happened inside me this past month?"**`},
-{ref:'Psalm 34:8',v:'"Taste and see that the LORD is good."'},
+{ref:'Psalm 34:8',u:'https://www.bible.com/bible/59/PSA.34.8',v:'"Taste and see that the LORD is good."'},
 {p:`The goal of this challenge was never
 to add 31 pieces of knowledge about God.
 
@@ -662,7 +662,7 @@ Loving people with that love.
 
 If you kept walking that life,
 **what kind of person would you become?**`},
-{ref:'John 15:5',v:'"I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit."'},
+{ref:'John 15:5',u:'https://www.bible.com/bible/59/JHN.15.5',v:'"I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit."'},
 {p:`A branch doesn't strain to produce fruit.
 
 **Fruit grows because the branch stays connected to the vine.**
@@ -671,7 +671,7 @@ In the same way, what Jesus offers is not
 a life of self-improvement by willpower.
 
 **It's a life connected to Jesus — Love himself — where that love bears fruit through you.**`},
-{ref:'Galatians 5:22–23',v:'"The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness and self-control."'},
+{ref:'Galatians 5:22–23',u:'https://www.bible.com/bible/59/GAL.5.22-23',v:'"The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness and self-control."'},
 {p:`Love. Joy. Peace. Patience. Kindness. Faithfulness. Self-control.
 
 What if these flowed out of you
@@ -715,7 +715,7 @@ Who did Jesus turn out to be?
 
 And above all:
 **do you want to keep walking with him from here?**`},
-{ref:'John 6:67–68',v:`Jesus asked the Twelve,
+{ref:'John 6:67–68',u:'https://www.bible.com/bible/59/JHN.6.67-68',v:`Jesus asked the Twelve,
 "You do not want to leave too, do you?"
 Peter answered,
 "Lord, to whom shall we go? You have the words of eternal life."`},
@@ -769,7 +769,7 @@ you can always come back.
 
 Jesus is not someone
 who resents your return.`},
-{ref:'John 6:37',v:'"Whoever comes to me I will never drive away."'},
+{ref:'John 6:37',u:'https://www.bible.com/bible/59/JHN.6.37',v:'"Whoever comes to me I will never drive away."'},
 {pr:`If you haven't decided yet, try praying this today:
 
 "God, thank You for these 31 days. I don't understand everything yet. But I will treasure what I've seen and felt. If there's more You want to show me, keep leading me."
@@ -829,10 +829,10 @@ What matters is this:
 {p:`The God of the Bible doesn't just have love.
 
 **God Himself is love.**`},
-{ref:'1 John 4:8',v:'"God is love."'},
+{ref:'1 John 4:8',u:'https://www.bible.com/bible/59/1JN.4.8',v:'"God is love."'},
 {p:`And the Bible says human beings
 were made in the image of that God.`},
-{ref:'Genesis 1:27',v:'"God created mankind in his own image."'},
+{ref:'Genesis 1:27',u:'https://www.bible.com/bible/59/GEN.1.27',v:'"God created mankind in his own image."'},
 {p:`That's why we
 want to love,
 want to be loved,
@@ -850,7 +850,7 @@ Sin isn't just a "list of bad deeds."
 
 At its root, sin is
 **leaving the God who is love, and living with self at the center.**`},
-{ref:'Isaiah 59:2',v:'"Your iniquities have separated you from your God."'},
+{ref:'Isaiah 59:2',u:'https://www.bible.com/bible/59/ISA.59.2',v:'"Your iniquities have separated you from your God."'},
 {p:`Cut off from the source of love,
 we became starved for it.
 
@@ -877,7 +877,7 @@ That's Jesus.
 Jesus, who had no sin,
 carried your sin
 and died on the cross in your place.`},
-{ref:'1 Peter 3:18',v:'"Christ suffered once for sins, the righteous for the unrighteous, to bring you to God."'},
+{ref:'1 Peter 3:18',u:'https://www.bible.com/bible/59/1PE.3.18',v:'"Christ suffered once for sins, the righteous for the unrighteous, to bring you to God."'},
 {p:`So the cross was never
 "God is angry — stay away."
 
@@ -888,7 +888,7 @@ It's the opposite.
 {p:`Jesus didn't end at the cross.
 
 He rose from the dead, and **he is alive right now.**`},
-{ref:'Romans 6:9',v:'"Christ, having been raised from the dead, will never die again."'},
+{ref:'Romans 6:9',u:'https://www.bible.com/bible/59/ROM.6.9',v:'"Christ, having been raised from the dead, will never die again."'},
 {p:`So Christianity is not
 keeping the teachings of a dead great man.
 
@@ -897,18 +897,18 @@ keeping the teachings of a dead great man.
 And Jesus didn't come only to forgive your sin.
 
 **He came so that you could be born again.**`},
-{ref:'John 3:3',v:'"No one can see the kingdom of God unless they are born again."'},
+{ref:'John 3:3',u:'https://www.bible.com/bible/59/JHN.3.3',v:'"No one can see the kingdom of God unless they are born again."'},
 {p:`This is not about gradually improving your old self
 into a "better person."
 
 **It's the old self dying, and a new self being born.**`},
-{ref:'Galatians 2:20',v:'"I no longer live, but Christ lives in me."'},
+{ref:'Galatians 2:20',u:'https://www.bible.com/bible/59/GAL.2.20',v:'"I no longer live, but Christ lives in me."'},
 {p:`The old self — separated from love,
 living as its own lord — dies.
 
 And connected to Jesus, who is Love,
 **you are born new, as the true you that love created.**`},
-{ref:'2 Corinthians 5:17',v:'"If anyone is in Christ, the new creation has come: The old has gone, the new is here!"'},
+{ref:'2 Corinthians 5:17',u:'https://www.bible.com/bible/59/2CO.5.17',v:'"If anyone is in Christ, the new creation has come: The old has gone, the new is here!"'},
 {p:`This is what it means to be **reborn as love.**
 
 And this is only the beginning.
@@ -919,7 +919,7 @@ your thinking, your words, the way you treat people, your whole life —
 **everything begins to change into a life where the love of Jesus inside you shows on the outside.**
 
 The Bible goes as far as to say:`},
-{ref:'1 John 4:17',v:'"In this world we are like Jesus."'},
+{ref:'1 John 4:17',u:'https://www.bible.com/bible/59/1JN.4.17',v:'"In this world we are like Jesus."'},
 {p:`This is the true self we were reborn to be — love.
 
 Not carrying the label "Christian."
@@ -931,7 +931,7 @@ Not starting a religion.
 
 What's left is whether you will
 **receive the gift, and hand the lordship of your life from yourself to Jesus.**`},
-{ref:'Romans 10:9',v:'"If you declare with your mouth, \'Jesus is Lord,\' and believe in your heart that God raised him from the dead, you will be saved."'},
+{ref:'Romans 10:9',u:'https://www.bible.com/bible/59/ROM.10.9',v:'"If you declare with your mouth, \'Jesus is Lord,\' and believe in your heart that God raised him from the dead, you will be saved."'},
 {p:`So ask yourself, right here:
 
 **"Do I believe in Jesus, and do I want to live with Love himself as the Lord of my life?"**`},
@@ -1071,25 +1071,25 @@ sec:[
 {p:`If today you've decided,\n**"I believe in Jesus, and I want to walk through life with him,"**\nthen there's something you should know about as your next step.\n\n**Water baptism.**\n\nIt's not a complicated religious ritual.\nIt's not a graduation ceremony for people who became perfect Christians.\n\nIn the Bible, when people came to believe in Jesus,\nwater baptism was the first step that expressed that faith in action.\n\nYou don't have to understand everything first.\nYou don't have to finish reading the whole Bible.\nYou don't have to clean up your whole life.\n\nIf the faith in you says,\n"I want to follow Jesus" —\nthen learn about water baptism.`},
 {h:'So what is water baptism?'},
 {p:`In one sentence:\n**expressing with your body the death of the old you, and the birth of the new you.**`},
-{ref:'Romans 6:4',v:'"We were therefore buried with him through baptism into death, in order that, just as Christ was raised from the dead through the glory of the Father, we too may live a new life."'},
+{ref:'Romans 6:4',u:'https://www.bible.com/bible/59/ROM.6.4',v:'"We were therefore buried with him through baptism into death, in order that, just as Christ was raised from the dead through the glory of the Father, we too may live a new life."'},
 {p:`Going into the water\nexpresses that **the old you died with Jesus.**\n\nRising out of the water\nexpresses that **you now live as a new person with Jesus.**\n\nSo baptism is not just an event\nwhere your body gets wet.\n\nIt's the moment you express with your own body\nthe faith that says,\n**"From here on, I live with Jesus."**`},
 {h:'What dies?'},
 {p:`Not your existence.\nNot your personality.\n\nWhat dies is\n**the old self that lived apart from God, as the lord of its own life.**`},
-{ref:'Galatians 2:20',v:'"I have been crucified with Christ and I no longer live, but Christ lives in me."'},
+{ref:'Galatians 2:20',u:'https://www.bible.com/bible/59/GAL.2.20',v:'"I have been crucified with Christ and I no longer live, but Christ lives in me."'},
 {p:`Until now, maybe it was:\n"It's my life, so I'm the lord of it."\n\nFrom here on:\n**"Jesus, I'm following you."**\n\nWater baptism makes that turn visible.`},
 {h:'Then who rises out of the water?'},
 {p:`**The newly born you.**`},
-{ref:'2 Corinthians 5:17',v:'"If anyone is in Christ, the new creation has come: The old has gone, the new is here!"'},
+{ref:'2 Corinthians 5:17',u:'https://www.bible.com/bible/59/2CO.5.17',v:'"If anyone is in Christ, the new creation has come: The old has gone, the new is here!"'},
 {p:`Jesus didn't come\nto slightly improve the old you.\n\n**He came to make you new.**\n\nThe old self that lived apart from love dies,\nyou are connected to the God who is love,\nand you are reborn as love.\n\nSo when you rise out of the water,\nthis is the faith you're expressing:\n\n**"The old me has died.\nFrom now on, Jesus lives in me.\nI live a new life."**`},
 {h:'Why get baptized?'},
 {p:`The simplest answer:\n**because Jesus taught us to.**`},
-{ref:'Matthew 28:19–20',v:'Jesus commanded his disciples to make disciples of all nations, baptizing them in the name of the Father, the Son, and the Holy Spirit.'},
+{ref:'Matthew 28:19–20',u:'https://www.bible.com/bible/59/MAT.28.19-20',v:'Jesus commanded his disciples to make disciples of all nations, baptizing them in the name of the Father, the Son, and the Holy Spirit.'},
 {p:`And in the first church,\nthose who believed in Jesus were baptized.`},
-{ref:'Acts 2:41',v:'"Those who accepted his message were baptized."'},
+{ref:'Acts 2:41',u:'https://www.bible.com/bible/59/ACT.2.41',v:'"Those who accepted his message were baptized."'},
 {p:`They didn't study for years\nand get baptized after becoming "full-fledged Christians."\n\n**They believed — so they were baptized.**`},
 {h:'Do I have to understand everything first?'},
 {p:`Not at all.\n\nIn the Bible, some people were baptized the very day they heard about Jesus.\n\nAn Ethiopian official heard about Jesus from Philip.\nAs they traveled, they came to some water.\n\nAnd he said:`},
-{ref:'Acts 8:36',v:'"Look, here is water. What can stand in the way of my being baptized?"'},
+{ref:'Acts 8:36',u:'https://www.bible.com/bible/59/ACT.8.36',v:'"Look, here is water. What can stand in the way of my being baptized?"'},
 {p:`And he was baptized.\n\nHe didn't understand all the theology.\nHe had zero years of Christian experience.\n\nBut **he had faith in Jesus.**\n\nSo you don't have to wait until\n"I know more,"\n"I become a better person,"\n"I seem more like a Christian."\n\nRather:\n**baptism is not for finished people — it's a step taken by people who follow Jesus.**`},
 {h:'Will baptism make me perfect?'},
 {p:`No.\n\nYou won't stop failing from the next day on.\nPlenty of questions will remain.\n\nBut there is one big difference:\n\n**you have decided whom you live following.**\n\nFrom here,\nyou talk with Jesus,\nlearn his words,\nreceive his love,\nget back up when you fall,\nand come to know him more deeply, little by little.\n\nBaptism isn't the goal.\n**It's the moment you declare, with your body, the start of a new life.**`},
