@@ -244,16 +244,16 @@ and say, **"You're a failure."**
 It might sound strange.
 
 But what Jesus wanted was never a relationship
-where humans just bow from a fearful distance.
+where humans bow from a fearful distance.
 
 Talking.
 Listening.
-Walking together.
+Walking through life together.
 Sharing what's real.
 
 Jesus called human beings **"friends."**`},
 {q:['What does a "best friend" mean to you?','If you could have a relationship with Jesus even deeper than that, would you want it?','If Jesus were walking next to you today, what would you talk about?']},
-{pr:'"Jesus, if I can really talk with you like a friend, I want to know you more. Be with me today."'},
+{pr:'"Jesus, if I can really talk with you like a friend, I want to come closer to you."'},
 {j:['**If I could talk one-on-one with Jesus today, I\'d want to talk about ________.**']}
 ]},
 {title:'Jesus gave his life for you',sec:[
