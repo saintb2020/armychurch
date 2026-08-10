@@ -103,7 +103,9 @@ The things you've carried alone.
 The pain no one ever understood.
 
 If God is really there,
-**maybe you weren't alone — even in your darkest moment.**`},
+**maybe you weren't alone — even in your darkest moment.**
+
+God is right beside you, and He wants to help you.`},
 {q:['When in your life did you feel most alone?','If God was right beside you even in that moment, what would that change?','Is there something right now that you feel no one understands?']},
 {pr:'"God, if You\'re really near, let me feel Your presence today in a way I can recognize."'},
 {j:['**Right now, where I most want God beside me is ________.**']}
@@ -135,16 +137,19 @@ If what the Bible says is true,
 {j:['**If God were with me all day today, ________.**']}
 ]},
 {title:'Your life has meaning',sec:[
-{ref:'Ephesians 2:10',u:'https://www.bible.com/bible/59/EPH.2.10',v:'"We are God\'s workmanship, created in Christ Jesus for good works."'},
+{ref:'Psalm 139:13–14',u:'https://www.bible.com/bible/59/PSA.139.13-14',v:'"You formed my inward parts; you knitted me together in my mother\'s womb. I praise you, for I am fearfully and wonderfully made."'},
 {p:`You're not here by accident.
 
-The Bible calls human beings God's **workmanship** — His work of art.
+The Bible says God made you as a **work of art.**
 
 A work of art has an artist.
-And the artist had an intention when making it.
+And the artist had an intention — and a heart — behind making it.
 
-If God made you,
-**then your life has a meaning you haven't discovered yet.**`},
+And the greater the artist, the greater the work.
+
+So if the greatest One in all the universe made you,
+**your life carries a powerful meaning.**`},
+{ref:'Ephesians 2:10',u:'https://www.bible.com/bible/59/EPH.2.10',v:'"We are God\'s workmanship, created in Christ Jesus for good works."'},
 {q:['When you hear "you are God\'s work of art," what\'s the first thing you feel?','If you were made on purpose, not by accident, how would that change the way you see your life?','If you could ask God directly, "Why did You make me?" — would you want the answer?']},
 {pr:'"God, if You\'re the one who made me, show me what You made me for."'},
 {j:['**If I was made for a purpose, I want to ________ that purpose.**']}
