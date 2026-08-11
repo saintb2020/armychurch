@@ -598,12 +598,12 @@ Say thank you.`},
 {p:`So far, you've
 talked to him.
 Listened.
-Handed over your burdens.
+Handed your burdens over.
 Received his love.
 Leaned on him.
-And passed that love to someone else.
+And let that love flow to someone else.
 
-So — what if this didn't end as one special week,
+So — what if this didn't end when the challenge ends,
 **but became an everyday relationship?**`},
 {ref:'John 15:4',u:'https://www.bible.com/bible/59/JHN.15.4',v:'"Remain in me, as I also remain in you."'},
 {p:`What Jesus wants is not a religion
@@ -611,7 +611,7 @@ you visit once in a while.
 
 **It's a life lived together.**`},
 {q:['Over these 7 days, has your impression of Jesus changed?','If you could talk with Jesus every day, how do you think your life would change?','Do you want to keep this relationship going?']},
-{pr:'"Jesus, I want to know you more. Teach me to live every day of my life with you — not just today."'},
+{pr:'"Jesus, I want to know you more. I want to live every day with you. Lead me."'},
 {j:['**The relationship I want to build with Jesus from here: ________**']}
 ]},
 {title:'What happened in me this past month?',sec:[
