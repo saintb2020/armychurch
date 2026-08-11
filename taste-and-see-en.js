@@ -360,23 +360,23 @@ Not **change → then be loved.**
 {j:['**If I\'m loved without proving anything, then I ________.**']}
 ]},
 {title:'When everyone picked up stones, Jesus…',sec:[
-{p:`A woman was dragged out in front of the crowd.
-She had sinned.
+{p:`A woman was caught in a sexual sin
+and dragged out in front of the crowd.
 
 The people around her picked up stones, ready to judge her.
 
 Jesus didn't say her sin "didn't matter."
-But he didn't join the crowd trying to destroy her either.
+But he didn't join the crowd that wanted her executed either.
 
 When only Jesus was left, he said to her:`},
 {ref:'John 8:10–11',u:'https://www.bible.com/bible/59/JHN.8.10-11',v:'"Neither do I condemn you. Go, and from now on sin no more."'},
-{p:`Jesus didn't say, **"You're finished."**
+{p:`Jesus didn't say, **"How could you do this?"**
 
-He said, **"Start living new — from here."**
+He said, **"I don't condemn you. Start living new — from here."**
 
-Forgiveness doesn't make the past right.
+Forgiveness doesn't justify the past.
 
-**It refuses to let the past rule the future.**`},
+**It's the hope of being born new.**`},
 {q:['If everyone knew the thing you\'re most ashamed of, how would that feel?','What if Jesus knows all of it and still says, "Neither do I condemn you"?','If you could be free from your past and live new — would you want to?']},
 {pr:'"Jesus, if you already know everything about me, I\'ll stop hiding. Show me that your love and forgiveness are bigger than my past."'},
 {j:['**If my past doesn\'t get to decide my life, then I ________.**']}
