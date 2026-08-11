@@ -336,18 +336,19 @@ Jesus told her,
 ]},
 {title:'Jesus walked into the outcast\'s house',sec:[
 {p:`There was a man named Zacchaeus.
-He was a tax collector, and people hated him.
+He collected taxes from people and lined his own pockets by cheating them.
+So everyone hated him.
 
-When he climbed a tree just to see Jesus,
-Jesus stopped — on his own.
+One day he climbed a tree, just to catch a glimpse of Jesus.
 
-And said,
-**"I'm staying at your house today."**
-
-Jesus didn't accept Zacchaeus because he changed his life.
-**Being accepted is what changed him.**`},
+Jesus — surrounded by crowds, wanted by everyone —
+stopped under that tree
+**and said he would spend the day with the man everyone hated.**`},
 {ref:'Luke 19:5',u:'https://www.bible.com/bible/59/LUK.19.5',v:'"Zacchaeus, come down at once. I must stay at your house today."'},
-{p:`After that, Zacchaeus began changing how he lived — on his own.
+{p:`As a result, Zacchaeus' life changed.
+
+Not because he was a good man.
+**Being loved before he changed is what changed him.**
 
 The order mattered.
 
