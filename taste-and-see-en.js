@@ -456,9 +456,7 @@ There was no time left to redo his life.
 No good deeds could buy back his past.
 
 The only thing he could do
-was ask Jesus for help.
-
-And Jesus said:`},
+was ask Jesus for help.`},
 {ref:'Luke 23:42–43',u:'https://www.bible.com/bible/59/LUK.23.42-43',v:`"Jesus, remember me when you come into your kingdom."
 Jesus answered him,
 "Truly I tell you, today you will be with me in paradise."`},
@@ -517,7 +515,7 @@ But the safest, simplest place to start is this:
 **read Jesus' words, and listen from there.**`},
 {ref:'John 10:27',u:'https://www.bible.com/bible/59/JHN.10.27',v:'"My sheep listen to my voice; I know them, and they follow me."'},
 {q:['In a close relationship, both people talk and both people listen, right?','If Jesus is alive today, wouldn\'t it make sense that he has something to say to you?','If you could hear one word from Jesus today, what would you want it to be about?']},
-{pr:'"Jesus, if you really speak to me, speak in a way I can understand. I want to listen."',note:'Today, read a little of one of the Gospels, and **stop at the one line that stays with you most.**'},
+{pr:'"Jesus, if you really speak to me, speak in a way I can understand. I want to listen."',note:'Today, read a little of the Bible, and **stop at the one line that stays with you most.**'},
 {j:['**The line that stayed with me most today: ________**']}
 ]},
 {title:'Hand over the heaviest thing',sec:[
