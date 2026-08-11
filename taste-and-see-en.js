@@ -518,7 +518,7 @@ But the safest, simplest place to start is this:
 {pr:'"Jesus, if you really speak to me, speak in a way I can understand. I want to listen."',note:'Today, read a little of the Bible, and **stop at the one line that stays with you most.**'},
 {j:['**The line that stayed with me most today: ________**']}
 ]},
-{title:'Hand over the heaviest thing',sec:[
+{title:'Hand your burden over',sec:[
 {th:'You don\'t have to carry everything alone.'},
 {p:`The anxiety you've told no one about.
 
@@ -534,7 +534,7 @@ Everyone lives carrying invisible baggage.
 But Jesus never said,
 "Get stronger and carry it yourself."`},
 {ref:'Matthew 11:28',u:'https://www.bible.com/bible/59/MAT.11.28',v:'"Come to me, all you who are weary and burdened, and I will give you rest."'},
-{q:['What\'s the heaviest thing you\'re carrying right now?','Do you want to keep carrying it alone forever?','If Jesus will really carry it, do you want to hand it over?']},
+{q:['What\'s the heaviest thing you\'re carrying right now?','Do you want to keep carrying it alone forever?','If Jesus will really carry it on his shoulders, do you want to hand it over?']},
 {pr:'"Jesus, I\'ve been carrying ____. I don\'t want to hold it alone anymore. Today, I hand it to you. Help me."'},
 {j:['**What I handed to Jesus today: ________**']}
 ]},
@@ -590,7 +590,7 @@ Encourage.
 Help.
 Say thank you.`},
 {q:['Who around you needs love today?','If you did for them one thing you\'d want done for you — what would it be?','How do you think Jesus would treat that person?']},
-{pr:'"Jesus, use me today to love someone. Show me what you would do."'},
+{pr:'"Jesus, who is the person you want your love to flow to today? Show me what you would do."'},
 {j:['**Who I\'ll love in action today, and the one step: ________**']}
 ]},
 {title:'Make Jesus the closest one to you',sec:[
