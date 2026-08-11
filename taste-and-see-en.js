@@ -277,16 +277,14 @@ in action — how much He loves human beings.`},
 {p:`If Jesus had died and that was the end,
 he might just be one more great figure in history.
 
-But the center of Christianity is not
-"Jesus died."
-
-It's **"Jesus died — and rose again."**
+**But Jesus did not end at death.**
+He laid down his life for you, and rose from the dead.
 
 So a relationship with Jesus isn't
-studying about someone from the past.
+studying a figure from history.
 
-If he really rose,
-**he is alive — someone you can talk to right now.**`},
+It's a relationship with someone who rose from the dead and is powerfully alive today.
+**So right now, you can talk with him as a friend.**`},
 {q:['If Jesus is really alive today, what changes for you?','If he\'s not a figure from 2,000 years ago but someone you can talk to today — do you want to?','If you could ask Jesus one question directly, what would it be?']},
 {pr:'"Jesus, if you really rose and are alive right now, show yourself to me in a way I can understand."'},
 {j:['**If Jesus is really alive today, then I ________.**']}
@@ -306,7 +304,7 @@ Jesus' invitation is simple:
 
 These 7 days, you've seen a little of Jesus.
 
-So — do you want to know him
+Has that made you want to know him
 more than you did 7 days ago?`},
 {q:['Has your image of Jesus changed over these 7 days?','Which side of Jesus drew you the most so far?','If you could actually taste who Jesus is for yourself, do you want to come closer?']},
 {pr:'"Jesus, there\'s still so much I don\'t understand. But if you\'re really alive, I want to know you more. Starting today, show me for myself who you are."'},
