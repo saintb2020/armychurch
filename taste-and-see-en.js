@@ -390,8 +390,8 @@ Jesus knew he was about to bring Lazarus back to life.
 And still, in front of the grieving,
 **Jesus wept too.**`},
 {ref:'John 11:35',u:'https://www.bible.com/bible/59/JHN.11.35',v:'"Jesus wept."'},
-{p:`If God exists, there's pain that makes us ask,
-"Why did You let this happen?"
+{p:`If God exists, there are times you may ask,
+"Why do things like this happen?"
 
 But Jesus was not a god watching human pain from a distance.
 
@@ -404,15 +404,15 @@ And then, he brought life where there was death.`},
 {j:['**What I want Jesus to weep with me about today is ________.**']}
 ]},
 {title:'The four friends who carried a man who couldn\'t walk',sec:[
-{p:`There was a man who couldn't get to Jesus on his own.
+{p:`There was a man who was paralyzed and couldn't get to Jesus on his own.
 But he had four friends.
 
 They carried him to where Jesus was.
 
 The crowd was too thick to get through.
-So they refused to give up — they opened the roof and lowered him right in front of Jesus.
+So they refused to give up — they tore open the roof and lowered him right in front of Jesus.
 
-And what Jesus saw wasn't just the man.`},
+And what Jesus saw wasn't just the paralyzed man.`},
 {ref:'Mark 2:5',u:'https://www.bible.com/bible/59/MRK.2.5',v:'"When Jesus saw their faith…"'},
 {p:`**You don't have to reach Jesus on your own.**
 
