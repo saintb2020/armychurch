@@ -780,7 +780,11 @@ If you've already decided to walk with Jesus, try praying this:
 
 "Jesus, thank you for these 31 days. I don't want it to end here — I want to know you more. Connect me to you, fill me with your love, and teach me to live as who I really am — love. Walk with me for the rest of my life."`},
 {j:[{label:'After 31 days, my answer today:',x:'□ I want to walk with Jesus　□ I want to know more before deciding　□ I don\'t believe right now'},{label:'Why do I feel that way?',x:'________________'},{label:'The biggest thing I received in these 31 days:',x:'________________'}]},
-{h:'31 days. Well done.'},
+{survey:'after',
+ badge:'FINAL CHALLENGE',
+ h:'Compare yourself to 31 days ago',
+ p:`Congratulations!\n\nDo you remember the you who filled this out 31 days ago?\n\nAnswer the same questions once more, and see how much has changed\nsince before you started tasting God.\n\nThere are no right answers. Just record yourself as you are.\n\nYou can check your answers from 31 days ago in the email copy you received.`},
+{h:'One month. You made it.'},
 {p:`But this isn't graduation.
 And you haven't learned everything about God.
 
@@ -799,11 +803,12 @@ and becoming one with others who live the same love.`},
 {p:`And the goal was never
 to become a Christian who only knows things.
 
-**It's to be connected to Jesus, be reborn into his love, and live as that love.**`},
-{survey:'after',
- badge:'FINAL CHALLENGE',
- h:'Compare yourself to 31 days ago',
- p:`Congratulations!\n\nDo you remember the you who filled this out 31 days ago?\n\nAnswer the same questions once more, and see how much has changed\nsince before you started tasting God.\n\nThere are no right answers. Just record yourself as you are.\n\nYou can check your answers from 31 days ago in the email copy you received.`}
+**It's to be connected to Jesus, be reborn into his love, and live as that love.**
+
+Next is [INTIMACY](intimacy.html).
+To be reborn as who you really are — pure love —
+connect deeply with Love himself, and grow close.`}
+
 ]}
 ],
 connect:{
