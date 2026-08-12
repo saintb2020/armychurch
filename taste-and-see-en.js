@@ -306,7 +306,7 @@ These 7 days, you've seen a little of Jesus.
 
 Has that made you want to know him
 more than you did 7 days ago?`},
-{q:['Has your image of Jesus changed over these 7 days?','Which side of Jesus drew you the most so far?','If you could actually taste who Jesus is for yourself, do you want to come closer?']},
+{q:['Has your image of Jesus changed over these 7 days?','What part of Jesus\u2019 character has drawn you in the most so far?','If you could actually taste who Jesus is for yourself, do you want to come closer?']},
 {pr:'"Jesus, there\'s still so much I don\'t understand. But if you\'re really alive, I want to know you more. Starting today, show me for myself who you are."'},
 {j:['**To me right now, Jesus is ________.**']}
 ]},
@@ -321,7 +321,7 @@ He didn't avoid her.
 
 Instead, he spoke to her first — and told her what she had really been searching for.`},
 {ref:'John 4:13–14',u:'https://www.bible.com/bible/59/JHN.4.13-14',v:'"Everyone who drinks this water will be thirsty again, but whoever drinks the water I give them will never thirst."'},
-{p:`It's not just our throats that get thirsty. Our hearts do too.
+{p:`We don't just experience thirst physically. Our hearts thirst too.
 
 Romance. Success. Approval. Money. Pleasure.
 
@@ -330,7 +330,7 @@ And then we're thirsty again.
 
 Jesus told her,
 **"What you've been searching for — I can give you."**`},
-{q:['Have you ever gotten the thing you thought would finally satisfy you — and then wanted more?','If that repeating thirst had a deeper cause, would you want to know it?','If Jesus is saying to you too, "I can give you water that ends the thirst" — do you want to drink?']},
+{q:['Have you ever gotten the thing you thought would finally satisfy you — and then wanted more?','If that repeating thirst had a deeper cause, would you want to know it?','If Jesus is saying to you too, "I can give you water that ends the thirst" — would you want to drink it?']},
 {pr:'"Jesus, you may know what I\'m really searching for better than I do. If there\'s a thirst in me only you can satisfy, satisfy it."'},
 {j:['**The thirst I most want satisfied right now is ________.**']}
 ]},
@@ -540,7 +540,7 @@ But Jesus never said,
 ]},
 {title:'Live one day as someone already loved',sec:[
 {th:'Not living to be loved — living from being loved.'},
-{p:`We want to be approved of.
+{p:`We seek approval from others.
 We want to be liked.
 We want to be seen as worth something.
 
@@ -812,7 +812,7 @@ connect deeply with Love himself, and grow close.`}
 ]}
 ],
 connect:{
-title:'For anyone who wants to connect with Love — Jesus',
+title:'I want to follow Jesus',
 sec:[
 {p:`If right now, it's not just
 **"I want to know more about Jesus,"**
@@ -1060,7 +1060,7 @@ dec:'To be filled with love always — do you want to be connected to God\'s lov
 ],
 gates:[
 {no:'TASTE & SEE 1',title:'Can imperfect people taste a perfect God?',
-p:`We are imperfect.\n\nIf there were even one drop of poison in a glass of water, would you drink it?\nNo, you wouldn't.\n\nIn the same way, imperfect people cannot connect\nwith a perfect God as they are.\nThe Bible calls that "one drop" **sin.**\n\nTo make poisoned water drinkable, you need an antidote.\n\nSo the only perfect one — Jesus —\ncarried our sin in our place and went to the cross.\n\nBecause he paid instead of us,\nanyone who believes is washed clean\nand can be connected to God.\n\n**So the way is already open.**`,
+p:`We are imperfect.\n\nIf there were even one drop of poison in a glass of water, would you drink it?\nNo, you wouldn't.\n\nIn the same way, imperfect people cannot connect\nwith a perfect God as they are.\nThe Bible has a word for that one drop: **sin.**\n\nTo make poisoned water drinkable, you need an antidote.\n\nSo the only perfect one — Jesus —\ncarried our sin in our place and went to the cross.\n\nBecause he paid instead of us,\nanyone who believes is washed clean\nand can be connected to God.\n\n**So the way is already open.**`,
 refs:[{t:'All have sinned',r:'Romans 3:23',u:'https://www.bible.com/bible/59/ROM.3.23'},{t:"Through Jesus' sacrifice, we can be connected to God",r:'1 Peter 3:18',u:'https://www.bible.com/bible/59/1PE.3.18'},{t:'Believe in your heart, declare with your mouth, and you will be saved',r:'Romans 10:9–10',u:'https://www.bible.com/bible/59/ROM.10.9-10'}]},
 {no:'TASTE & SEE 2',title:'Can I taste him without understanding everything?',
 p:`If a friend said, "I know someone you'd totally hit it off with — can I introduce you?"\nwhat would you do?\n\nYou wouldn't say, "Not until I understand everything about them."\n\nYou'd just meet them.\nWhether you click — **you find out by meeting.**\n\nIt's the same with God.\nNot "after I understand everything."\n\n**First, meet him.**\n\nIt's fine to start small.\nStaying in the dark is the real waste.`,
