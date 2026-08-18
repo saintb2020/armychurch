@@ -155,8 +155,8 @@ body.en .doorcard .t{font-family:var(--serif-en);font-size:1.25rem}
   <a href="#decide"><span class="hb">❤</span><span id="doortext"></span></a>
 </div>
 
-<script src="content-intimacy-ja.js?v=64"></script>
-<script src="content-intimacy-en.js?v=64"></script>
+<script src="content-intimacy-ja.js?v=66"></script>
+<script src="content-intimacy-en.js?v=66"></script>
 <script>
 const UI = {
  ja:{home:'目次', prev:'← 前へ', next:'次へ →',
@@ -317,7 +317,12 @@ function renderMd(md){
 
 /* ---------- pages ---------- */
 function secById(id){ return C().sections.find(s=>s.id===id); }
-function ordered(){ return C().sections.filter(s=>['j','h','f','w'].includes(s.g)); }
+function ordered(){
+  const c=C();
+  const main=c.sections.filter(s=>['j','h','f','w'].includes(s.g));
+  const refs=c.refs.map(r=>c.sections.find(s=>s.id===r.id)).filter(Boolean);
+  return main.concat(refs);
+}
 
 function doorCard(){
   const u=UI[lang];
@@ -326,8 +331,9 @@ function doorCard(){
 
 function renderHome(){
   const c=C(), u=UI[lang];
-  const total = ordered().length;
-  const doneN = ordered().filter(s=>doneSet.has(s.id)).length;
+  const main = c.sections.filter(s=>['j','h','f','w'].includes(s.g));
+  const total = main.length;
+  const doneN = main.filter(s=>doneSet.has(s.id)).length;
 
   let h=`<div class="hero">
     <div class="eyebrow">${esc(c.title)}</div>
@@ -375,7 +381,7 @@ function renderSection(id){
   h+=`<div class="md">${renderMd(s.md)}</div>`;
 
   if(idx>=0){
-    h+=`<button class="donebtn ${doneSet.has(id)?'on':''}" id="donebtn">${doneSet.has(id)?u.doneOn:u.done}</button>`;
+    if(s.g!=='r') h+=`<button class="donebtn ${doneSet.has(id)?'on':''}" id="donebtn">${doneSet.has(id)?u.doneOn:u.done}</button>`;
     h+=`<div class="pagenav">`;
     h+= idx>0 ? `<a href="#${seq[idx-1].id}">${u.prev}</a>` : `<span></span>`;
     h+=`<a class="home" href="#">${u.home}</a>`;
