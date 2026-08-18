@@ -155,8 +155,8 @@ body.en .doorcard .t{font-family:var(--serif-en);font-size:1.25rem}
   <a href="#decide"><span class="hb">❤</span><span id="doortext"></span></a>
 </div>
 
-<script src="content-intimacy-ja.js?v=61"></script>
-<script src="content-intimacy-en.js?v=61"></script>
+<script src="content-intimacy-ja.js?v=64"></script>
+<script src="content-intimacy-en.js?v=64"></script>
 <script>
 const UI = {
  ja:{home:'目次', prev:'← 前へ', next:'次へ →',
@@ -198,8 +198,10 @@ function inline(s){
   t = t.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
   // 相互参照【◯◯】→ 該当セクションへのリンク
   const XREF = (lang==='en')
-    ? {'Bible Guide':'bible','Talk':'h1','Listen':'h2','Read':'h3','Sing':'h4','Taste':'h5','Cut':'h6','Give':'h7','Gather':'h8'}
-    : {'聖書ガイド':'bible','話す':'h1','聞く':'h2','読む':'h3','歌う':'h4','味わう':'h5','断つ':'h6','捧げる':'h7','集う':'h8'};
+    ? {'Bible Guide':'bible','Put God first':'decide','Names of God':'names',
+       'Talk':'h1','Listen':'h2','Read':'h3','Sing':'h4','Taste':'h5','Cut':'h6','Give':'h7','Gather':'h8'}
+    : {'聖書ガイド':'bible','神様を一番にしたい人へ':'decide','神の名前':'names',
+       '話す':'h1','聞く':'h2','読む':'h3','歌う':'h4','味わう':'h5','断つ':'h6','捧げる':'h7','集う':'h8'};
   t = t.replace(/【([^】]+)】/g, (m0, inner)=>{
     const id = XREF[inner];
     const label = (lang==='en') ? inner : '【'+inner+'】';
