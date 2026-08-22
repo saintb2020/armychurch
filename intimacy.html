@@ -155,8 +155,8 @@ body.en .doorcard .t{font-family:var(--serif-en);font-size:1.25rem}
   <a href="#decide"><span class="hb">❤</span><span id="doortext"></span></a>
 </div>
 
-<script src="content-intimacy-ja.js?v=73"></script>
-<script src="content-intimacy-en.js?v=73"></script>
+<script src="content-intimacy-ja.js?v=74"></script>
+<script src="content-intimacy-en.js?v=74"></script>
 <script>
 const UI = {
  ja:{home:'目次', prev:'← 前へ', next:'次へ →',
@@ -319,7 +319,7 @@ function renderMd(md){
 function secById(id){ return C().sections.find(s=>s.id===id); }
 function ordered(){
   const c=C();
-  const main=c.sections.filter(s=>['j','h','f','w'].includes(s.g));
+  const main=c.sections.filter(s=>['j','h','f','w','s'].includes(s.g));
   const refs=c.refs.map(r=>c.sections.find(s=>s.id===r.id)).filter(Boolean);
   return main.concat(refs);
 }
@@ -331,7 +331,7 @@ function doorCard(){
 
 function renderHome(){
   const c=C(), u=UI[lang];
-  const main = c.sections.filter(s=>['j','h','f','w'].includes(s.g));
+  const main = c.sections.filter(s=>['j','h','f','w','s'].includes(s.g));
   const total = main.length;
   const doneN = main.filter(s=>doneSet.has(s.id)).length;
 
